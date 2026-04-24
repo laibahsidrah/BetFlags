@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_red">#FF002E63</color>
+    <color name="odds_gold">#FFFFD700</color>
+    <color name="red_primary">#FFE53935</color>
+    <color name="red_dark">#FFC4141E</color>
+    <color name="text_primary">#FF1A1A1A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="light_gray">#FFF0F2F5</color>
+    <color name="close_button_bg">#80000000</color>
+</resources>

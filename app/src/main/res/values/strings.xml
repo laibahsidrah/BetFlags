@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <!-- Sportbook shell: верхний хаб + боковая колонка (не drawer) -->
+    <string name="top_hub_live">LIVE</string>
+    <string name="top_hub_matches">MATCHES</string>
+    <string name="top_hub_leagues">LEAGUES</string>
+    <string name="top_hub_saved">MY LIST</string>
+    <string name="sidebar_group_football">Football</string>
+    <string name="sidebar_football_live">Live matches</string>
+    <string name="sidebar_football_calendar">Daily list</string>
+    <string name="sidebar_football_leagues">Leagues &amp; cups</string>
+    <string name="sidebar_my_list">My list</string>
+    <string name="sidebar_hide">Hide menu</string>
+    <string name="sidebar_show">Show menu</string>
+
+    <!-- Navigation (drawer); старые ключи tab_* оставлены для совместимости строк -->
+    <string name="nav_drawer_section">Browse</string>
+    <string name="open_menu">Open menu</string>
+    <string name="nav_live_center">Live center</string>
+    <string name="nav_schedule">Calendar</string>
+    <string name="nav_competitions">Competitions</string>
+    <string name="nav_my_list">My list</string>
+    <string name="screen_schedule_title">Calendar</string>
+    <string name="screen_competitions_title">Competitions</string>
+    <string name="screen_my_list_title">My list</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_matches">Matches</string>
+    <string name="tab_leagues">Leagues</string>
+    <string name="tab_favorites">Favorites</string>
+    <string name="tab_more">More</string>
+    <string name="tab_profile">Profile</string>
+    <string name="profile_saved_section">Saved</string>
+    <string name="profile_tools_section">Tools</string>
+
+    <!-- Common -->
+    <string name="loading_error">Loading Error</string>
+    <string name="retry">Retry</string>
+    <string name="no_data">No data</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Loading…</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Match Status -->
+    <string name="status_tbd">TBD</string>
+    <string name="status_not_started">Not Started</string>
+    <string name="status_finished">Finished</string>
+    <string name="status_finished_et">Finished (ET)</string>
+    <string name="status_finished_pen">Finished (PEN)</string>
+    <string name="status_postponed">Postponed</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_abandoned">Abandoned</string>
+    <string name="status_halftime">Half-Time</string>
+
+    <!-- Live Screen -->
+    <string name="live_screen_title">LIVE</string>
+    <string name="sport_football_prefix">Football.</string>
+    <string name="col_event">Event</string>
+    <string name="col_score">Score</string>
+    <string name="col_1">1</string>
+    <string name="col_x">X</string>
+    <string name="col_2">2</string>
+    <string name="col_f1">H1</string>
+    <string name="col_k1">O1</string>
+    <string name="col_f2">H2</string>
+    <string name="col_k2">O2</string>
+    <string name="col_tot">Tot</string>
+    <string name="no_live_matches">No live matches at the moment</string>
+
+    <!-- Matches Screen -->
+    <string name="today">Today</string>
+    <string name="no_matches_date">No matches for this date</string>
+
+    <!-- Leagues Screen -->
+    <string name="search_league_hint">Search league or country…</string>
+    <string name="no_leagues_found">No leagues found</string>
+
+    <!-- Favorites Screen -->
+    <string name="add_favorites_hint">Add teams or leagues to favorites</string>
+    <string name="teams">Teams</string>
+    <string name="leagues_label">Leagues</string>
+
+    <!-- Standings Screen -->
+    <string name="standings">Standings</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Team</string>
+    <string name="col_played">P</string>
+    <string name="col_wins">W</string>
+    <string name="col_draws">D</string>
+    <string name="col_losses">L</string>
+    <string name="col_gd">GD</string>
+    <string name="col_pts">Pts</string>
+
+    <!-- Top Scorers Screen -->
+    <string name="top_players">Top Players</string>
+    <string name="scorers">Scorers</string>
+    <string name="assists_tab">Assists</string>
+
+    <!-- Match Details Screen -->
+    <string name="tab_overview">Overview</string>
+    <string name="tab_statistics">Statistics</string>
+    <string name="tab_events">Events</string>
+    <string name="tab_lineups">Lineups</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Predictions</string>
+    <string name="no_match_data">No match data</string>
+    <string name="stadium">Stadium</string>
+    <string name="referee_label">Referee: %s</string>
+    <string name="statistics_label">Statistics</string>
+    <string name="statistics_unavailable">Statistics unavailable</string>
+    <string name="no_events_yet">No events yet</string>
+    <string name="assist_label">Assist: %s</string>
+    <string name="lineups_unavailable">Lineups unavailable</string>
+    <string name="formation_label">Formation: %s</string>
+    <string name="coach_label">Coach: %s</string>
+    <string name="starting_xi">Starting XI</string>
+    <string name="substitutes">Substitutes</string>
+    <string name="no_h2h_matches">No H2H matches</string>
+    <string name="predictions_unavailable">Predictions and odds unavailable</string>
+    <string name="advice">Advice</string>
+    <string name="probabilities">Probabilities</string>
+    <string name="odds">Odds</string>
+    <string name="home">Home</string>
+    <string name="draw">Draw</string>
+    <string name="away">Away</string>
+    <string name="favorite_label">Favorite: %s</string>
+
+    <!-- Team Details Screen -->
+    <string name="team">Team</string>
+    <string name="squad">Squad</string>
+    <string name="coach">Coach</string>
+    <string name="injuries">Injuries</string>
+    <string name="recent_matches">Recent Matches</string>
+    <string name="founded_label">Founded: %s</string>
+    <string name="stadium_label">Stadium: %s</string>
+    <string name="city_label">City: %s</string>
+    <string name="capacity_label">Capacity: %s</string>
+    <string name="surface_label">Surface: %s</string>
+    <string name="no_injuries">No injuries</string>
+    <string name="position_other">Other</string>
+
+    <!-- Player Details Screen -->
+    <string name="player">Player</string>
+    <string name="nationality_short">Nat.</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="stat_apps">Apps</string>
+    <string name="stat_goals">Goals</string>
+    <string name="stat_assists">Assists</string>
+    <string name="stat_rating">Rating</string>
+    <string name="stat_minutes">Minutes</string>
+    <string name="stat_shots">Shots</string>
+    <string name="stat_passes">Passes</string>
+    <string name="stat_dribbles">Dribbles</string>
+    <string name="stat_yellow_cards">YC</string>
+    <string name="stat_red_cards">RC</string>
+    <string name="stat_tackles">Tackles</string>
+    <string name="stat_interceptions">Interceptions</string>
+
+    <!-- More Screen -->
+    <string name="top_scorers">Top Scorers</string>
+    <string name="delete_favorites">Delete Favorites</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to log out? You will need to sign in again.</string>
+    <string name="select_league">Select League</string>
+    <string name="delete_all_favorites">Delete All Favorites</string>
+    <string name="delete_favorites_confirm">Are you sure you want to remove all favorite teams and leagues?</string>
+
+    <!-- Phone Verification -->
+    <string name="welcome_title">WELCOME</string>
+    <string name="welcome_subtitle">to the official sport app</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="phone_helper_text">Select a country code and enter your phone number</string>
+    <string name="registration_button">Registration</string>
+    <string name="sms_confirmation_free">SMS confirmation is free of charge.\nYour data is encrypted.</string>
+    <string name="enter_sms_code_title">Enter SMS code</string>
+    <string name="sms_sent_to_number">We sent a code to the number:</string>
+    <string name="resend_timer">Resend in %d sec</string>
+    <string name="resend_code">Resend code</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="back_button">Back</string>
+    <string name="terms_agreement_text">By clicking \"Registration\", you confirm\nthat you are 18 years old, have read and accept</string>
+    <string name="network_error_title">Connection Error</string>
+    <string name="network_error_message">Unable to connect to the server. Please check your internet connection and try again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="terms_link">TERMS OF USE AND PRIVACY POLICY</string>
+    <string name="select_country">Select your country</string>
+    <string name="search_country">Search country</string>
+    <string name="invalid_code">Invalid code</string>
+    <string name="enter_phone">Enter your phone number</string>
+    <string name="code_hint">Enter code</string>
+    <string name="code_sent">Code sent</string>
+    <string name="continue_btn">Continue</string>
+    <string name="enter_sms_code">Enter SMS code</string>
+    <string name="phone_hint">Phone number</string>
+    <string name="phone_verification_title">Phone Verification</string>
+    <string name="send_code">Send code</string>
+    <string name="waiting_for_code">Waiting for code</string>
+</resources>

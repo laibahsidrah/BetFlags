@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Élő</string>
+    <string name="tab_matches">Mérkőzések</string>
+    <string name="tab_leagues">Ligák</string>
+    <string name="tab_favorites">Kedvencek</string>
+    <string name="tab_more">Továbbiak</string>
+
+    <string name="loading_error">Betöltési hiba</string>
+    <string name="retry">Újra</string>
+    <string name="no_data">Nincs adat</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Betöltés…</string>
+    <string name="back">Vissza</string>
+    <string name="cancel">Mégse</string>
+    <string name="delete">Törlés</string>
+
+    <string name="status_tbd">Meghatározandó</string>
+    <string name="status_not_started">Nem kezdődött el</string>
+    <string name="status_finished">Befejezve</string>
+    <string name="status_finished_et">Befejezve (h.i.)</string>
+    <string name="status_finished_pen">Befejezve (büntetők)</string>
+    <string name="status_postponed">Elhalasztva</string>
+    <string name="status_cancelled">Törölve</string>
+    <string name="status_abandoned">Félbeszakítva</string>
+    <string name="status_halftime">Félidő</string>
+
+    <string name="no_live_matches">Jelenleg nincs élő mérkőzés</string>
+
+    <string name="today">Ma</string>
+    <string name="no_matches_date">Nincs mérkőzés erre a napra</string>
+
+    <string name="search_league_hint">Liga vagy ország keresése…</string>
+    <string name="no_leagues_found">Nem található liga</string>
+
+    <string name="add_favorites_hint">Adj hozzá csapatokat vagy ligákat a kedvencekhez</string>
+    <string name="teams">Csapatok</string>
+    <string name="leagues_label">Ligák</string>
+
+    <string name="standings">Tabella</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Csapat</string>
+    <string name="col_played">M</string>
+    <string name="col_wins">Gy</string>
+    <string name="col_draws">D</string>
+    <string name="col_losses">V</string>
+    <string name="col_gd">GK</string>
+    <string name="col_pts">P</string>
+
+    <string name="top_players">Legjobb játékosok</string>
+    <string name="scorers">Gólszerzők</string>
+    <string name="assists_tab">Gólpasszok</string>
+
+    <string name="tab_overview">Áttekintés</string>
+    <string name="tab_statistics">Statisztikák</string>
+    <string name="tab_events">Események</string>
+    <string name="tab_lineups">Felállások</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Előrejelzések</string>
+    <string name="no_match_data">Nincs mérkőzés adat</string>
+    <string name="stadium">Stadion</string>
+    <string name="referee_label">Játékvezető: %s</string>
+    <string name="statistics_label">Statisztikák</string>
+    <string name="statistics_unavailable">Statisztikák nem elérhetők</string>
+    <string name="no_events_yet">Még nincs esemény</string>
+    <string name="assist_label">Gólpassz: %s</string>
+    <string name="lineups_unavailable">Felállások nem elérhetők</string>
+    <string name="formation_label">Felállás: %s</string>
+    <string name="coach_label">Edző: %s</string>
+    <string name="starting_xi">Kezdőcsapat</string>
+    <string name="substitutes">Cserék</string>
+    <string name="no_h2h_matches">Nincs egymás elleni mérkőzés</string>
+    <string name="predictions_unavailable">Előrejelzések és szorzók nem elérhetők</string>
+    <string name="advice">Tanács</string>
+    <string name="probabilities">Valószínűségek</string>
+    <string name="odds">Szorzók</string>
+    <string name="home">Hazai</string>
+    <string name="draw">Döntetlen</string>
+    <string name="away">Vendég</string>
+    <string name="favorite_label">Favorit: %s</string>
+
+    <string name="team">Csapat</string>
+    <string name="squad">Keret</string>
+    <string name="coach">Edző</string>
+    <string name="injuries">Sérülések</string>
+    <string name="recent_matches">Legutóbbi mérkőzések</string>
+    <string name="founded_label">Alapítva: %s</string>
+    <string name="stadium_label">Stadion: %s</string>
+    <string name="city_label">Város: %s</string>
+    <string name="capacity_label">Kapacitás: %s</string>
+    <string name="surface_label">Talaj: %s</string>
+    <string name="no_injuries">Nincs sérülés</string>
+    <string name="position_other">Egyéb</string>
+
+    <string name="player">Játékos</string>
+    <string name="nationality_short">Áll.</string>
+    <string name="age">Kor</string>
+    <string name="height">Magasság</string>
+    <string name="weight">Súly</string>
+    <string name="stat_apps">Meccsek</string>
+    <string name="stat_goals">Gólok</string>
+    <string name="stat_assists">Gólpasszok</string>
+    <string name="stat_rating">Értékelés</string>
+    <string name="stat_minutes">Percek</string>
+    <string name="stat_shots">Lövések</string>
+    <string name="stat_passes">Passz</string>
+    <string name="stat_dribbles">Cselek</string>
+    <string name="stat_yellow_cards">SK</string>
+    <string name="stat_red_cards">PK</string>
+    <string name="stat_tackles">Szerelések</string>
+    <string name="stat_interceptions">Labdaszerzések</string>
+
+    <string name="top_scorers">Legjobb gólszerzők</string>
+    <string name="delete_favorites">Kedvencek törlése</string>
+    <string name="privacy_policy">Adatvédelmi szabályzat</string>
+    <string name="delete_account">Fiók törlése</string>
+    <string name="select_league">Liga kiválasztása</string>
+    <string name="delete_all_favorites">Összes kedvenc törlése</string>
+    <string name="delete_favorites_confirm">Biztosan törölni szeretnéd az összes kedvenc csapatot és ligát?</string>
+
+    <string name="welcome_title">ÜDVÖZÖLJÜK</string>
+    <string name="welcome_subtitle">a hivatalos sport alkalmazásban</string>
+    <string name="phone_number_hint">Telefonszám</string>
+    <string name="phone_helper_text">Válasszon országkódot és adja meg telefonszámát</string>
+    <string name="registration_button">Regisztráció</string>
+    <string name="sms_confirmation_free">Az SMS megerősítés ingyenes.\nAz Ön adatai titkosítva vannak.</string>
+    <string name="enter_sms_code_title">Adja meg az SMS kódot</string>
+    <string name="sms_sent_to_number">Kódot küldtünk a számra:</string>
+    <string name="resend_timer">Újraküldés %d mp múlva</string>
+    <string name="resend_code">Kód újraküldése</string>
+    <string name="confirm_button">Megerősítés</string>
+    <string name="back_button">Vissza</string>
+    <string name="terms_agreement_text">A „Regisztráció" gombra kattintva megerősíti,\nhogy betöltötte a 18. életévét és elfogadja</string>
+    <string name="terms_link">A FELHASZNÁLÁSI FELTÉTELEKET ÉS AZ ADATVÉDELMI SZABÁLYZATOT</string>
+    <string name="phone_verification_title">Ellenőrzés</string>
+    <string name="select_country">Válassza ki országát</string>
+    <string name="enter_phone">Adja meg telefonszámát</string>
+    <string name="enter_sms_code">Adja meg az SMS kódot</string>
+    <string name="send_code">Kód küldése</string>
+    <string name="continue_btn">Tovább</string>
+    <string name="code_sent">Kód elküldve!</string>
+    <string name="invalid_code">Érvénytelen kód</string>
+    <string name="phone_hint">Telefonszám</string>
+    <string name="code_hint">Kód</string>
+    <string name="waiting_for_code">Várakozás a kódra…</string>
+    <string name="search_country">Ország keresése</string>
+    <string name="network_error_title">Kapcsolódási hiba</string>
+    <string name="network_error_message">Nem sikerült csatlakozni a szerverhez. Ellenőrizze az internetkapcsolatot, és próbálja újra.</string>
+    <string name="try_again">Próbálja újra</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="logout_confirm">Biztosan ki akar jelentkezni? Újra be kell jelentkeznie.</string>
+
+</resources>

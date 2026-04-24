@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Na żywo</string>
+    <string name="tab_matches">Mecze</string>
+    <string name="tab_leagues">Ligi</string>
+    <string name="tab_favorites">Ulubione</string>
+    <string name="tab_more">Więcej</string>
+
+    <string name="loading_error">Błąd ładowania</string>
+    <string name="retry">Ponów</string>
+    <string name="no_data">Brak danych</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Ładowanie…</string>
+    <string name="back">Wstecz</string>
+    <string name="cancel">Anuluj</string>
+    <string name="delete">Usuń</string>
+
+    <string name="status_tbd">Do ustalenia</string>
+    <string name="status_not_started">Nie rozpoczęty</string>
+    <string name="status_finished">Zakończony</string>
+    <string name="status_finished_et">Zakończony (d.g.)</string>
+    <string name="status_finished_pen">Zakończony (karne)</string>
+    <string name="status_postponed">Przełożony</string>
+    <string name="status_cancelled">Odwołany</string>
+    <string name="status_abandoned">Przerwany</string>
+    <string name="status_halftime">Przerwa</string>
+
+    <string name="no_live_matches">Brak meczów na żywo w tej chwili</string>
+
+    <string name="today">Dzisiaj</string>
+    <string name="no_matches_date">Brak meczów w tym dniu</string>
+
+    <string name="search_league_hint">Szukaj ligi lub kraju…</string>
+    <string name="no_leagues_found">Nie znaleziono lig</string>
+
+    <string name="add_favorites_hint">Dodaj drużyny lub ligi do ulubionych</string>
+    <string name="teams">Drużyny</string>
+    <string name="leagues_label">Ligi</string>
+
+    <string name="standings">Tabela</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Drużyna</string>
+    <string name="col_played">M</string>
+    <string name="col_wins">Z</string>
+    <string name="col_draws">R</string>
+    <string name="col_losses">P</string>
+    <string name="col_gd">RB</string>
+    <string name="col_pts">Pkt</string>
+
+    <string name="top_players">Najlepsi gracze</string>
+    <string name="scorers">Strzelcy</string>
+    <string name="assists_tab">Asysty</string>
+
+    <string name="tab_overview">Przegląd</string>
+    <string name="tab_statistics">Statystyki</string>
+    <string name="tab_events">Zdarzenia</string>
+    <string name="tab_lineups">Składy</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Prognozy</string>
+    <string name="no_match_data">Brak danych o meczu</string>
+    <string name="stadium">Stadion</string>
+    <string name="referee_label">Sędzia: %s</string>
+    <string name="statistics_label">Statystyki</string>
+    <string name="statistics_unavailable">Statystyki niedostępne</string>
+    <string name="no_events_yet">Brak zdarzeń</string>
+    <string name="assist_label">Asysta: %s</string>
+    <string name="lineups_unavailable">Składy niedostępne</string>
+    <string name="formation_label">Formacja: %s</string>
+    <string name="coach_label">Trener: %s</string>
+    <string name="starting_xi">Pierwszy skład</string>
+    <string name="substitutes">Rezerwowi</string>
+    <string name="no_h2h_matches">Brak meczów H2H</string>
+    <string name="predictions_unavailable">Prognozy i kursy niedostępne</string>
+    <string name="advice">Porada</string>
+    <string name="probabilities">Prawdopodobieństwa</string>
+    <string name="odds">Kursy</string>
+    <string name="home">Gospodarz</string>
+    <string name="draw">Remis</string>
+    <string name="away">Gość</string>
+    <string name="favorite_label">Faworyt: %s</string>
+
+    <string name="team">Drużyna</string>
+    <string name="squad">Skład</string>
+    <string name="coach">Trener</string>
+    <string name="injuries">Kontuzje</string>
+    <string name="recent_matches">Ostatnie mecze</string>
+    <string name="founded_label">Założony: %s</string>
+    <string name="stadium_label">Stadion: %s</string>
+    <string name="city_label">Miasto: %s</string>
+    <string name="capacity_label">Pojemność: %s</string>
+    <string name="surface_label">Nawierzchnia: %s</string>
+    <string name="no_injuries">Brak kontuzji</string>
+    <string name="position_other">Inne</string>
+
+    <string name="player">Gracz</string>
+    <string name="nationality_short">Nar.</string>
+    <string name="age">Wiek</string>
+    <string name="height">Wzrost</string>
+    <string name="weight">Waga</string>
+    <string name="stat_apps">Mecze</string>
+    <string name="stat_goals">Gole</string>
+    <string name="stat_assists">Asysty</string>
+    <string name="stat_rating">Ocena</string>
+    <string name="stat_minutes">Minuty</string>
+    <string name="stat_shots">Strzały</string>
+    <string name="stat_passes">Podania</string>
+    <string name="stat_dribbles">Dryblingi</string>
+    <string name="stat_yellow_cards">ŻK</string>
+    <string name="stat_red_cards">CzK</string>
+    <string name="stat_tackles">Odbiory</string>
+    <string name="stat_interceptions">Przechwycenia</string>
+
+    <string name="top_scorers">Najlepsi strzelcy</string>
+    <string name="delete_favorites">Usuń ulubione</string>
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="delete_account">Usuń konto</string>
+    <string name="select_league">Wybierz ligę</string>
+    <string name="delete_all_favorites">Usuń wszystkie ulubione</string>
+    <string name="delete_favorites_confirm">Czy na pewno chcesz usunąć wszystkie ulubione drużyny i ligi?</string>
+
+    <string name="welcome_title">WITAMY</string>
+    <string name="welcome_subtitle">w oficjalnej aplikacji sportowej</string>
+    <string name="phone_number_hint">Numer telefonu</string>
+    <string name="phone_helper_text">Wybierz kod kraju i podaj swój numer telefonu</string>
+    <string name="registration_button">Rejestracja</string>
+    <string name="sms_confirmation_free">Potwierdzenie SMS jest bezpłatne.\nTwoje dane są zaszyfrowane.</string>
+    <string name="enter_sms_code_title">Wprowadź kod SMS</string>
+    <string name="sms_sent_to_number">Wysłaliśmy kod na numer:</string>
+    <string name="resend_timer">Wyślij ponownie za %d sek</string>
+    <string name="resend_code">Wyślij kod ponownie</string>
+    <string name="confirm_button">Potwierdź</string>
+    <string name="back_button">Wstecz</string>
+    <string name="terms_agreement_text">Klikając „Rejestracja", potwierdzasz,\nże masz 18 lat i akceptujesz</string>
+    <string name="terms_link">REGULAMIN I POLITYKĘ PRYWATNOŚCI</string>
+    <string name="phone_verification_title">Weryfikacja</string>
+    <string name="select_country">Wybierz swój kraj</string>
+    <string name="enter_phone">Wprowadź numer telefonu</string>
+    <string name="enter_sms_code">Wprowadź kod SMS</string>
+    <string name="send_code">Wyślij kod</string>
+    <string name="continue_btn">Kontynuuj</string>
+    <string name="code_sent">Kod wysłany!</string>
+    <string name="invalid_code">Nieprawidłowy kod</string>
+    <string name="phone_hint">Numer telefonu</string>
+    <string name="code_hint">Kod</string>
+    <string name="waiting_for_code">Oczekiwanie na kod…</string>
+    <string name="search_country">Szukaj kraju</string>
+    <string name="network_error_title">Błąd połączenia</string>
+    <string name="network_error_message">Nie można połączyć się z serwerem. Sprawdź połączenie internetowe i spróbuj ponownie.</string>
+    <string name="try_again">Spróbuj ponownie</string>
+    <string name="logout">Wyloguj</string>
+    <string name="logout_confirm">Czy na pewno chcesz się wylogować? Będziesz musiał zalogować się ponownie.</string>
+
+</resources>

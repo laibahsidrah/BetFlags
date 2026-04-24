@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <!-- Navigation -->
+    <string name="tab_live">Лайв</string>
+    <string name="tab_matches">Матчи</string>
+    <string name="tab_leagues">Лиги</string>
+    <string name="tab_favorites">Избранное</string>
+    <string name="tab_more">Ещё</string>
+
+    <!-- Common -->
+    <string name="loading_error">Ошибка загрузки</string>
+    <string name="retry">Повторить</string>
+    <string name="no_data">Нет данных</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Загрузка…</string>
+    <string name="back">Назад</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+
+    <!-- Match Status -->
+    <string name="status_tbd">Не определено</string>
+    <string name="status_not_started">Не начался</string>
+    <string name="status_finished">Завершён</string>
+    <string name="status_finished_et">Завершён (ДВ)</string>
+    <string name="status_finished_pen">Завершён (пен.)</string>
+    <string name="status_postponed">Отложен</string>
+    <string name="status_cancelled">Отменён</string>
+    <string name="status_abandoned">Прерван</string>
+    <string name="status_halftime">Перерыв</string>
+
+    <!-- Live Screen -->
+    <string name="no_live_matches">Нет текущих матчей</string>
+
+    <!-- Matches Screen -->
+    <string name="today">Сегодня</string>
+    <string name="no_matches_date">Нет матчей на эту дату</string>
+
+    <!-- Leagues Screen -->
+    <string name="search_league_hint">Поиск лиги или страны…</string>
+    <string name="no_leagues_found">Лиги не найдены</string>
+
+    <!-- Favorites Screen -->
+    <string name="add_favorites_hint">Добавьте команды или лиги в избранное</string>
+    <string name="teams">Команды</string>
+    <string name="leagues_label">Лиги</string>
+
+    <!-- Standings Screen -->
+    <string name="standings">Турнирная таблица</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Команда</string>
+    <string name="col_played">И</string>
+    <string name="col_wins">В</string>
+    <string name="col_draws">Н</string>
+    <string name="col_losses">П</string>
+    <string name="col_gd">РМ</string>
+    <string name="col_pts">О</string>
+
+    <!-- Top Scorers Screen -->
+    <string name="top_players">Лучшие игроки</string>
+    <string name="scorers">Бомбардиры</string>
+    <string name="assists_tab">Ассистенты</string>
+
+    <!-- Match Details Screen -->
+    <string name="tab_overview">Обзор</string>
+    <string name="tab_statistics">Статистика</string>
+    <string name="tab_events">События</string>
+    <string name="tab_lineups">Составы</string>
+    <string name="tab_h2h">Очные</string>
+    <string name="tab_predictions">Прогнозы</string>
+    <string name="no_match_data">Нет данных о матче</string>
+    <string name="stadium">Стадион</string>
+    <string name="referee_label">Судья: %s</string>
+    <string name="statistics_label">Статистика</string>
+    <string name="statistics_unavailable">Статистика недоступна</string>
+    <string name="no_events_yet">Событий пока нет</string>
+    <string name="assist_label">Ассист: %s</string>
+    <string name="lineups_unavailable">Составы недоступны</string>
+    <string name="formation_label">Схема: %s</string>
+    <string name="coach_label">Тренер: %s</string>
+    <string name="starting_xi">Стартовый состав</string>
+    <string name="substitutes">Запасные</string>
+    <string name="no_h2h_matches">Нет очных встреч</string>
+    <string name="predictions_unavailable">Прогнозы и коэффициенты недоступны</string>
+    <string name="advice">Рекомендации</string>
+    <string name="probabilities">Вероятности</string>
+    <string name="odds">Коэффициенты</string>
+    <string name="home">Дома</string>
+    <string name="draw">Ничья</string>
+    <string name="away">Гости</string>
+    <string name="favorite_label">Фаворит: %s</string>
+
+    <!-- Team Details Screen -->
+    <string name="team">Команда</string>
+    <string name="squad">Состав</string>
+    <string name="coach">Тренер</string>
+    <string name="injuries">Травмы</string>
+    <string name="recent_matches">Последние матчи</string>
+    <string name="founded_label">Основан: %s</string>
+    <string name="stadium_label">Стадион: %s</string>
+    <string name="city_label">Город: %s</string>
+    <string name="capacity_label">Вместимость: %s</string>
+    <string name="surface_label">Покрытие: %s</string>
+    <string name="no_injuries">Нет травм</string>
+    <string name="position_other">Другое</string>
+
+    <!-- Player Details Screen -->
+    <string name="player">Игрок</string>
+    <string name="nationality_short">Нац.</string>
+    <string name="age">Возраст</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="stat_apps">Игры</string>
+    <string name="stat_goals">Голы</string>
+    <string name="stat_assists">Ассисты</string>
+    <string name="stat_rating">Рейтинг</string>
+    <string name="stat_minutes">Минуты</string>
+    <string name="stat_shots">Удары</string>
+    <string name="stat_passes">Передачи</string>
+    <string name="stat_dribbles">Дриблинг</string>
+    <string name="stat_yellow_cards">ЖК</string>
+    <string name="stat_red_cards">КК</string>
+    <string name="stat_tackles">Отборы</string>
+    <string name="stat_interceptions">Перехваты</string>
+
+    <!-- More Screen -->
+    <string name="top_scorers">Лучшие бомбардиры</string>
+    <string name="delete_favorites">Удалить избранное</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="select_league">Выберите лигу</string>
+    <string name="delete_all_favorites">Удалить всё избранное</string>
+    <string name="delete_favorites_confirm">Вы уверены, что хотите удалить все избранные команды и лиги?</string>
+
+    <!-- Phone Verification -->
+    <string name="welcome_title">ДОБРО ПОЖАЛОВАТЬ</string>
+    <string name="welcome_subtitle">в официальное спортивное приложение</string>
+    <string name="phone_number_hint">Номер телефона</string>
+    <string name="phone_helper_text">Выберите код страны и введите номер телефона</string>
+    <string name="registration_button">Регистрация</string>
+    <string name="sms_confirmation_free">SMS подтверждение бесплатно.\nВаши данные зашифрованы.</string>
+    <string name="enter_sms_code_title">Введите код из SMS</string>
+    <string name="sms_sent_to_number">Мы отправили код на номер:</string>
+    <string name="resend_timer">Отправить повторно через %d сек</string>
+    <string name="resend_code">Отправить ещё раз</string>
+    <string name="confirm_button">Подтвердить</string>
+    <string name="back_button">Назад</string>
+    <string name="terms_agreement_text">Нажимая на кнопку "Регистрация", Вы подтверждаете,\nчто Вам есть 18 лет, прочитали и принимаете</string>
+    <string name="network_error_title">Ошибка соединения</string>
+    <string name="network_error_message">Не удалось подключиться к серверу. Проверьте подключение к интернету и повторите попытку.</string>
+    <string name="try_again">Повторить</string>
+    <string name="terms_link">УСЛОВИЯ ПОЛЬЗОВАНИЯ И ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ</string>
+    <string name="select_country">Выберите страну</string>
+    <string name="search_country">Поиск страны</string>
+    <string name="invalid_code">Неверный код</string>
+    <string name="enter_phone">Введите номер телефона</string>
+    <string name="code_hint">Введите код</string>
+    <string name="code_sent">Код отправлен</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="enter_sms_code">Введите SMS код</string>
+    <string name="phone_hint">Номер телефона</string>
+    <string name="phone_verification_title">Верификация</string>
+    <string name="send_code">Отправить код</string>
+    <string name="waiting_for_code">Ожидание кода</string>
+    <string name="logout">Выход</string>
+    <string name="logout_confirm">Вы уверены, что хотите выйти? Вам потребуется войти снова.</string>
+
+</resources>

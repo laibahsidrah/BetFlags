@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Uživo</string>
+    <string name="tab_matches">Utakmice</string>
+    <string name="tab_leagues">Lige</string>
+    <string name="tab_favorites">Favoriti</string>
+    <string name="tab_more">Više</string>
+
+    <string name="loading_error">Greška učitavanja</string>
+    <string name="retry">Pokušaj ponovo</string>
+    <string name="no_data">Nema podataka</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Učitavanje…</string>
+    <string name="back">Nazad</string>
+    <string name="cancel">Odustani</string>
+    <string name="delete">Obriši</string>
+
+    <string name="status_tbd">Neodređeno</string>
+    <string name="status_not_started">Nije počela</string>
+    <string name="status_finished">Završena</string>
+    <string name="status_finished_et">Završena (prod.)</string>
+    <string name="status_finished_pen">Završena (pen.)</string>
+    <string name="status_postponed">Odgođena</string>
+    <string name="status_cancelled">Otkazana</string>
+    <string name="status_abandoned">Prekinuta</string>
+    <string name="status_halftime">Poluvrijeme</string>
+
+    <string name="no_live_matches">Nema utakmica uživo u ovom trenutku</string>
+
+    <string name="today">Danas</string>
+    <string name="no_matches_date">Nema utakmica za ovaj datum</string>
+
+    <string name="search_league_hint">Pretraži ligu ili zemlju…</string>
+    <string name="no_leagues_found">Nema pronađenih liga</string>
+
+    <string name="add_favorites_hint">Dodajte timove ili lige u favorite</string>
+    <string name="teams">Timovi</string>
+    <string name="leagues_label">Lige</string>
+
+    <string name="standings">Tabela</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Tim</string>
+    <string name="col_played">U</string>
+    <string name="col_wins">P</string>
+    <string name="col_draws">N</string>
+    <string name="col_losses">I</string>
+    <string name="col_gd">GR</string>
+    <string name="col_pts">Bod</string>
+
+    <string name="top_players">Najbolji igrači</string>
+    <string name="scorers">Strijelci</string>
+    <string name="assists_tab">Asistencije</string>
+
+    <string name="tab_overview">Pregled</string>
+    <string name="tab_statistics">Statistike</string>
+    <string name="tab_events">Događaji</string>
+    <string name="tab_lineups">Postave</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Prognoze</string>
+    <string name="no_match_data">Nema podataka o utakmici</string>
+    <string name="stadium">Stadion</string>
+    <string name="referee_label">Sudija: %s</string>
+    <string name="statistics_label">Statistike</string>
+    <string name="statistics_unavailable">Statistike nedostupne</string>
+    <string name="no_events_yet">Još nema događaja</string>
+    <string name="assist_label">Asistencija: %s</string>
+    <string name="lineups_unavailable">Postave nedostupne</string>
+    <string name="formation_label">Formacija: %s</string>
+    <string name="coach_label">Trener: %s</string>
+    <string name="starting_xi">Startni sastav</string>
+    <string name="substitutes">Zamjene</string>
+    <string name="no_h2h_matches">Nema međusobnih utakmica</string>
+    <string name="predictions_unavailable">Prognoze i kvote nedostupne</string>
+    <string name="advice">Savjet</string>
+    <string name="probabilities">Vjerovatnoće</string>
+    <string name="odds">Kvote</string>
+    <string name="home">Domaći</string>
+    <string name="draw">Neodlučeno</string>
+    <string name="away">Gosti</string>
+    <string name="favorite_label">Favorit: %s</string>
+
+    <string name="team">Tim</string>
+    <string name="squad">Kadar</string>
+    <string name="coach">Trener</string>
+    <string name="injuries">Povrede</string>
+    <string name="recent_matches">Nedavne utakmice</string>
+    <string name="founded_label">Osnovan: %s</string>
+    <string name="stadium_label">Stadion: %s</string>
+    <string name="city_label">Grad: %s</string>
+    <string name="capacity_label">Kapacitet: %s</string>
+    <string name="surface_label">Podloga: %s</string>
+    <string name="no_injuries">Nema povreda</string>
+    <string name="position_other">Ostalo</string>
+
+    <string name="player">Igrač</string>
+    <string name="nationality_short">Drž.</string>
+    <string name="age">Dob</string>
+    <string name="height">Visina</string>
+    <string name="weight">Težina</string>
+    <string name="stat_apps">Nastupi</string>
+    <string name="stat_goals">Golovi</string>
+    <string name="stat_assists">Asistencije</string>
+    <string name="stat_rating">Ocjena</string>
+    <string name="stat_minutes">Minute</string>
+    <string name="stat_shots">Udarci</string>
+    <string name="stat_passes">Dodavanja</string>
+    <string name="stat_dribbles">Driblanja</string>
+    <string name="stat_yellow_cards">ŽK</string>
+    <string name="stat_red_cards">CK</string>
+    <string name="stat_tackles">Oduzimanja</string>
+    <string name="stat_interceptions">Presretanja</string>
+
+    <string name="top_scorers">Najbolji strijelci</string>
+    <string name="delete_favorites">Obriši favorite</string>
+    <string name="privacy_policy">Pravila privatnosti</string>
+    <string name="delete_account">Obriši račun</string>
+    <string name="select_league">Odaberi ligu</string>
+    <string name="delete_all_favorites">Obriši sve favorite</string>
+    <string name="delete_favorites_confirm">Jeste li sigurni da želite ukloniti sve omiljene timove i lige?</string>
+
+    <string name="welcome_title">DOBRODOŠLI</string>
+    <string name="welcome_subtitle">u službenu sportsku aplikaciju</string>
+    <string name="phone_number_hint">Broj telefona</string>
+    <string name="phone_helper_text">Odaberite pozivni broj i unesite svoj broj telefona</string>
+    <string name="registration_button">Registracija</string>
+    <string name="sms_confirmation_free">SMS potvrda je besplatna.\nVaši podaci su šifrirani.</string>
+    <string name="enter_sms_code_title">Unesite SMS kod</string>
+    <string name="sms_sent_to_number">Poslali smo kod na broj:</string>
+    <string name="resend_timer">Ponovno slanje za %d sek</string>
+    <string name="resend_code">Ponovo pošalji kod</string>
+    <string name="confirm_button">Potvrdi</string>
+    <string name="back_button">Nazad</string>
+    <string name="terms_agreement_text">Klikom na „Registracija" potvrđujete\nda imate 18 godina i prihvatate</string>
+    <string name="terms_link">USLOVE KORIŠTENJA I PRAVILA PRIVATNOSTI</string>
+    <string name="phone_verification_title">Verifikacija</string>
+    <string name="select_country">Odaberite svoju zemlju</string>
+    <string name="enter_phone">Unesite svoj broj telefona</string>
+    <string name="enter_sms_code">Unesite SMS kod</string>
+    <string name="send_code">Pošalji kod</string>
+    <string name="continue_btn">Nastavi</string>
+    <string name="code_sent">Kod poslan!</string>
+    <string name="invalid_code">Nevažeći kod</string>
+    <string name="phone_hint">Broj telefona</string>
+    <string name="code_hint">Kod</string>
+    <string name="waiting_for_code">Čekanje koda…</string>
+    <string name="search_country">Pretraži zemlju</string>
+    <string name="network_error_title">Greška veze</string>
+    <string name="network_error_message">Nije moguće povezati se sa serverom. Provjerite internetsku vezu i pokušajte ponovo.</string>
+    <string name="try_again">Pokušaj ponovo</string>
+    <string name="logout">Odjava</string>
+    <string name="logout_confirm">Da li ste sigurni da se želite odjaviti? Moraćete se ponovo prijaviti.</string>
+
+</resources>

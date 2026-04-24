@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Live</string>
+    <string name="tab_matches">Ndeshje</string>
+    <string name="tab_leagues">Liga</string>
+    <string name="tab_favorites">Të preferuarat</string>
+    <string name="tab_more">Më shumë</string>
+
+    <string name="loading_error">Gabim ngarkimi</string>
+    <string name="retry">Provo përsëri</string>
+    <string name="no_data">Nuk ka të dhëna</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Po ngarkohet…</string>
+    <string name="back">Mbrapa</string>
+    <string name="cancel">Anulo</string>
+    <string name="delete">Fshi</string>
+
+    <string name="status_tbd">Pa caktuar</string>
+    <string name="status_not_started">Nuk ka filluar</string>
+    <string name="status_finished">Përfundoi</string>
+    <string name="status_finished_et">Përfundoi (shtesë)</string>
+    <string name="status_finished_pen">Përfundoi (penallti)</string>
+    <string name="status_postponed">Shtyrë</string>
+    <string name="status_cancelled">Anuluar</string>
+    <string name="status_abandoned">Braktisur</string>
+    <string name="status_halftime">Pushim</string>
+
+    <string name="no_live_matches">Nuk ka ndeshje live në këtë moment</string>
+
+    <string name="today">Sot</string>
+    <string name="no_matches_date">Nuk ka ndeshje për këtë datë</string>
+
+    <string name="search_league_hint">Kërko ligë ose vend…</string>
+    <string name="no_leagues_found">Nuk u gjetën liga</string>
+
+    <string name="add_favorites_hint">Shto skuadra ose liga te preferencat</string>
+    <string name="teams">Skuadra</string>
+    <string name="leagues_label">Liga</string>
+
+    <string name="standings">Renditja</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Skuadra</string>
+    <string name="col_played">N</string>
+    <string name="col_wins">F</string>
+    <string name="col_draws">B</string>
+    <string name="col_losses">H</string>
+    <string name="col_gd">NG</string>
+    <string name="col_pts">Pik</string>
+
+    <string name="top_players">Lojtarët më të mirë</string>
+    <string name="scorers">Golashënuesit</string>
+    <string name="assists_tab">Asistet</string>
+
+    <string name="tab_overview">Përmbledhja</string>
+    <string name="tab_statistics">Statistikat</string>
+    <string name="tab_events">Ngjarjet</string>
+    <string name="tab_lineups">Formacionet</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Parashikimet</string>
+    <string name="no_match_data">Nuk ka të dhëna për ndeshjen</string>
+    <string name="stadium">Stadiumi</string>
+    <string name="referee_label">Gjyqtari: %s</string>
+    <string name="statistics_label">Statistikat</string>
+    <string name="statistics_unavailable">Statistikat nuk janë të disponueshme</string>
+    <string name="no_events_yet">Ende nuk ka ngjarje</string>
+    <string name="assist_label">Asist: %s</string>
+    <string name="lineups_unavailable">Formacionet nuk janë të disponueshme</string>
+    <string name="formation_label">Formacioni: %s</string>
+    <string name="coach_label">Trajneri: %s</string>
+    <string name="starting_xi">Formacioni fillestar</string>
+    <string name="substitutes">Zëvendësuesit</string>
+    <string name="no_h2h_matches">Nuk ka ndeshje direkte</string>
+    <string name="predictions_unavailable">Parashikimet dhe kuotat nuk janë të disponueshme</string>
+    <string name="advice">Këshillë</string>
+    <string name="probabilities">Probabilitetet</string>
+    <string name="odds">Kuotat</string>
+    <string name="home">Shtëpia</string>
+    <string name="draw">Barazim</string>
+    <string name="away">Mysafir</string>
+    <string name="favorite_label">Favorit: %s</string>
+
+    <string name="team">Skuadra</string>
+    <string name="squad">Skuadra</string>
+    <string name="coach">Trajner</string>
+    <string name="injuries">Lëndime</string>
+    <string name="recent_matches">Ndeshjet e fundit</string>
+    <string name="founded_label">Themeluar: %s</string>
+    <string name="stadium_label">Stadiumi: %s</string>
+    <string name="city_label">Qyteti: %s</string>
+    <string name="capacity_label">Kapaciteti: %s</string>
+    <string name="surface_label">Sipërfaqja: %s</string>
+    <string name="no_injuries">Nuk ka lëndime</string>
+    <string name="position_other">Tjetër</string>
+
+    <string name="player">Lojtari</string>
+    <string name="nationality_short">Komb.</string>
+    <string name="age">Mosha</string>
+    <string name="height">Gjatësia</string>
+    <string name="weight">Pesha</string>
+    <string name="stat_apps">Ndeshje</string>
+    <string name="stat_goals">Gola</string>
+    <string name="stat_assists">Asistet</string>
+    <string name="stat_rating">Vlerësimi</string>
+    <string name="stat_minutes">Minuta</string>
+    <string name="stat_shots">Gjuajtje</string>
+    <string name="stat_passes">Pasime</string>
+    <string name="stat_dribbles">Driblime</string>
+    <string name="stat_yellow_cards">KV</string>
+    <string name="stat_red_cards">KK</string>
+    <string name="stat_tackles">Ndërhyrje</string>
+    <string name="stat_interceptions">Përgjime</string>
+
+    <string name="top_scorers">Golashënuesit kryesorë</string>
+    <string name="delete_favorites">Fshi të preferuarat</string>
+    <string name="privacy_policy">Politika e privatësisë</string>
+    <string name="delete_account">Fshi llogarinë</string>
+    <string name="select_league">Zgjidh ligën</string>
+    <string name="delete_all_favorites">Fshi të gjitha të preferuarat</string>
+    <string name="delete_favorites_confirm">A jeni i sigurt që dëshironi të hiqni të gjitha skuadrat dhe ligat e preferuara?</string>
+
+    <string name="welcome_title">MIRË SE VINI</string>
+    <string name="welcome_subtitle">në aplikacionin zyrtar sportiv</string>
+    <string name="phone_number_hint">Numri i telefonit</string>
+    <string name="phone_helper_text">Zgjidhni kodin e vendit dhe vendosni numrin tuaj të telefonit</string>
+    <string name="registration_button">Regjistrohu</string>
+    <string name="sms_confirmation_free">Konfirmimi me SMS është falas.\nTë dhënat tuaja janë të enkriptuara.</string>
+    <string name="enter_sms_code_title">Vendosni kodin SMS</string>
+    <string name="sms_sent_to_number">Dërguam një kod në numrin:</string>
+    <string name="resend_timer">Ridërgo pas %d sek</string>
+    <string name="resend_code">Ridërgo kodin</string>
+    <string name="confirm_button">Konfirmo</string>
+    <string name="back_button">Mbrapa</string>
+    <string name="terms_agreement_text">Duke klikuar \"Regjistrohu\", konfirmoni\nse jeni 18 vjeç dhe pranoni</string>
+    <string name="terms_link">KUSHTET E PËRDORIMIT DHE POLITIKËN E PRIVATËSISË</string>
+    <string name="phone_verification_title">Verifikimi</string>
+    <string name="select_country">Zgjidhni vendin tuaj</string>
+    <string name="enter_phone">Vendosni numrin e telefonit</string>
+    <string name="enter_sms_code">Vendosni kodin SMS</string>
+    <string name="send_code">Dërgo kodin</string>
+    <string name="continue_btn">Vazhdo</string>
+    <string name="code_sent">Kodi u dërgua!</string>
+    <string name="invalid_code">Kod i pavlefshëm</string>
+    <string name="phone_hint">Numri i telefonit</string>
+    <string name="code_hint">Kodi</string>
+    <string name="waiting_for_code">Duke pritur kodin…</string>
+    <string name="search_country">Kërko vendin</string>
+    <string name="network_error_title">Gabim lidhjeje</string>
+    <string name="network_error_message">Nuk mund të lidhet me serverin. Kontrolloni lidhjen tuaj me internetin dhe provoni përsëri.</string>
+    <string name="try_again">Provo përsëri</string>
+    <string name="logout">Dilni</string>
+    <string name="logout_confirm">Jeni i sigurt që doni të dilni? Do t’ju duhet të identifikoheni përsëri.</string>
+
+</resources>

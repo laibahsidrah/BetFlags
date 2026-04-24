@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Live</string>
+    <string name="tab_matches">Meciuri</string>
+    <string name="tab_leagues">Ligi</string>
+    <string name="tab_favorites">Favorite</string>
+    <string name="tab_more">Mai mult</string>
+
+    <string name="loading_error">Eroare de încărcare</string>
+    <string name="retry">Reîncercare</string>
+    <string name="no_data">Fără date</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Se încarcă…</string>
+    <string name="back">Înapoi</string>
+    <string name="cancel">Anulare</string>
+    <string name="delete">Șterge</string>
+
+    <string name="status_tbd">De stabilit</string>
+    <string name="status_not_started">Nu a început</string>
+    <string name="status_finished">Terminat</string>
+    <string name="status_finished_et">Terminat (prelungiri)</string>
+    <string name="status_finished_pen">Terminat (penalty)</string>
+    <string name="status_postponed">Amânat</string>
+    <string name="status_cancelled">Anulat</string>
+    <string name="status_abandoned">Abandonat</string>
+    <string name="status_halftime">Pauză</string>
+
+    <string name="no_live_matches">Nu sunt meciuri live în acest moment</string>
+
+    <string name="today">Astăzi</string>
+    <string name="no_matches_date">Nu sunt meciuri pentru această dată</string>
+
+    <string name="search_league_hint">Caută liga sau țara…</string>
+    <string name="no_leagues_found">Nu s-au găsit ligi</string>
+
+    <string name="add_favorites_hint">Adaugă echipe sau ligi la favorite</string>
+    <string name="teams">Echipe</string>
+    <string name="leagues_label">Ligi</string>
+
+    <string name="standings">Clasament</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Echipa</string>
+    <string name="col_played">J</string>
+    <string name="col_wins">V</string>
+    <string name="col_draws">E</string>
+    <string name="col_losses">Î</string>
+    <string name="col_gd">GD</string>
+    <string name="col_pts">Pct</string>
+
+    <string name="top_players">Cei mai buni jucători</string>
+    <string name="scorers">Marcatori</string>
+    <string name="assists_tab">Pase de gol</string>
+
+    <string name="tab_overview">Prezentare generală</string>
+    <string name="tab_statistics">Statistici</string>
+    <string name="tab_events">Evenimente</string>
+    <string name="tab_lineups">Formații</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Predicții</string>
+    <string name="no_match_data">Fără date despre meci</string>
+    <string name="stadium">Stadion</string>
+    <string name="referee_label">Arbitru: %s</string>
+    <string name="statistics_label">Statistici</string>
+    <string name="statistics_unavailable">Statistici indisponibile</string>
+    <string name="no_events_yet">Niciun eveniment încă</string>
+    <string name="assist_label">Pasă de gol: %s</string>
+    <string name="lineups_unavailable">Formații indisponibile</string>
+    <string name="formation_label">Formație: %s</string>
+    <string name="coach_label">Antrenor: %s</string>
+    <string name="starting_xi">Primul unsprezece</string>
+    <string name="substitutes">Rezerve</string>
+    <string name="no_h2h_matches">Nu există meciuri directe</string>
+    <string name="predictions_unavailable">Predicții și cote indisponibile</string>
+    <string name="advice">Sfat</string>
+    <string name="probabilities">Probabilități</string>
+    <string name="odds">Cote</string>
+    <string name="home">Acasă</string>
+    <string name="draw">Egal</string>
+    <string name="away">Deplasare</string>
+    <string name="favorite_label">Favorit: %s</string>
+
+    <string name="team">Echipă</string>
+    <string name="squad">Lot</string>
+    <string name="coach">Antrenor</string>
+    <string name="injuries">Accidentări</string>
+    <string name="recent_matches">Meciuri recente</string>
+    <string name="founded_label">Fondat: %s</string>
+    <string name="stadium_label">Stadion: %s</string>
+    <string name="city_label">Oraș: %s</string>
+    <string name="capacity_label">Capacitate: %s</string>
+    <string name="surface_label">Suprafață: %s</string>
+    <string name="no_injuries">Fără accidentări</string>
+    <string name="position_other">Altele</string>
+
+    <string name="player">Jucător</string>
+    <string name="nationality_short">Naț.</string>
+    <string name="age">Vârstă</string>
+    <string name="height">Înălțime</string>
+    <string name="weight">Greutate</string>
+    <string name="stat_apps">Meciuri</string>
+    <string name="stat_goals">Goluri</string>
+    <string name="stat_assists">Pase de gol</string>
+    <string name="stat_rating">Notă</string>
+    <string name="stat_minutes">Minute</string>
+    <string name="stat_shots">Șuturi</string>
+    <string name="stat_passes">Pase</string>
+    <string name="stat_dribbles">Driblinguri</string>
+    <string name="stat_yellow_cards">CG</string>
+    <string name="stat_red_cards">CR</string>
+    <string name="stat_tackles">Tacle</string>
+    <string name="stat_interceptions">Intercepții</string>
+
+    <string name="top_scorers">Golgheteri</string>
+    <string name="delete_favorites">Șterge favorite</string>
+    <string name="privacy_policy">Politica de confidențialitate</string>
+    <string name="delete_account">Șterge cont</string>
+    <string name="select_league">Selectează liga</string>
+    <string name="delete_all_favorites">Șterge toate favoritele</string>
+    <string name="delete_favorites_confirm">Sigur vrei să elimini toate echipele și ligile favorite?</string>
+
+    <string name="welcome_title">BINE AI VENIT</string>
+    <string name="welcome_subtitle">în aplicația oficială de sport</string>
+    <string name="phone_number_hint">Număr de telefon</string>
+    <string name="phone_helper_text">Selectați codul țării și introduceți numărul de telefon</string>
+    <string name="registration_button">Înregistrare</string>
+    <string name="sms_confirmation_free">Confirmarea prin SMS este gratuită.\nDatele tale sunt criptate.</string>
+    <string name="enter_sms_code_title">Introdu codul SMS</string>
+    <string name="sms_sent_to_number">Am trimis un cod la numărul:</string>
+    <string name="resend_timer">Retrimite în %d sec</string>
+    <string name="resend_code">Retrimite codul</string>
+    <string name="confirm_button">Confirmă</string>
+    <string name="back_button">Înapoi</string>
+    <string name="terms_agreement_text">Apăsând „Înregistrare", confirmi\ncă ai 18 ani și accepți</string>
+    <string name="terms_link">TERMENII DE UTILIZARE ȘI POLITICA DE CONFIDENȚIALITATE</string>
+    <string name="phone_verification_title">Verificare</string>
+    <string name="select_country">Selectează țara ta</string>
+    <string name="enter_phone">Introdu numărul de telefon</string>
+    <string name="enter_sms_code">Introdu codul SMS</string>
+    <string name="send_code">Trimite codul</string>
+    <string name="continue_btn">Continuă</string>
+    <string name="code_sent">Cod trimis!</string>
+    <string name="invalid_code">Cod invalid</string>
+    <string name="phone_hint">Număr de telefon</string>
+    <string name="code_hint">Cod</string>
+    <string name="waiting_for_code">Se așteaptă codul…</string>
+    <string name="search_country">Caută țara</string>
+    <string name="network_error_title">Eroare de conexiune</string>
+    <string name="network_error_message">Nu s-a putut conecta la server. Verificați conexiunea la internet și încercați din nou.</string>
+    <string name="try_again">Încearcă din nou</string>
+    <string name="logout">Deconectare</string>
+    <string name="logout_confirm">Sigur vrei să te deconectezi? Va trebui să te conectezi din nou.</string>
+
+</resources>

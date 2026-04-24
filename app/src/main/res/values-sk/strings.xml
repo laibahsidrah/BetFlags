@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Diretta</string>
+
+    <string name="tab_live">Naživo</string>
+    <string name="tab_matches">Zápasy</string>
+    <string name="tab_leagues">Ligy</string>
+    <string name="tab_favorites">Obľúbené</string>
+    <string name="tab_more">Viac</string>
+
+    <string name="loading_error">Chyba načítania</string>
+    <string name="retry">Skúsiť znova</string>
+    <string name="no_data">Žiadne dáta</string>
+    <string name="live_badge">LIVE</string>
+    <string name="vs">vs</string>
+    <string name="loading">Načítanie…</string>
+    <string name="back">Späť</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="delete">Vymazať</string>
+
+    <string name="status_tbd">Neurčené</string>
+    <string name="status_not_started">Nezačal</string>
+    <string name="status_finished">Ukončené</string>
+    <string name="status_finished_et">Ukončené (po predĺž.)</string>
+    <string name="status_finished_pen">Ukončené (pen.)</string>
+    <string name="status_postponed">Odložené</string>
+    <string name="status_cancelled">Zrušené</string>
+    <string name="status_abandoned">Prerušené</string>
+    <string name="status_halftime">Polčas</string>
+
+    <string name="no_live_matches">Žiadne živé zápasy v tejto chvíli</string>
+
+    <string name="today">Dnes</string>
+    <string name="no_matches_date">Žiadne zápasy pre tento dátum</string>
+
+    <string name="search_league_hint">Hľadať ligu alebo krajinu…</string>
+    <string name="no_leagues_found">Žiadne ligy nenájdené</string>
+
+    <string name="add_favorites_hint">Pridajte tímy alebo ligy do obľúbených</string>
+    <string name="teams">Tímy</string>
+    <string name="leagues_label">Ligy</string>
+
+    <string name="standings">Tabuľka</string>
+    <string name="col_rank">#</string>
+    <string name="col_team">Tím</string>
+    <string name="col_played">Z</string>
+    <string name="col_wins">V</string>
+    <string name="col_draws">R</string>
+    <string name="col_losses">P</string>
+    <string name="col_gd">RB</string>
+    <string name="col_pts">Body</string>
+
+    <string name="top_players">Najlepší hráči</string>
+    <string name="scorers">Strelci</string>
+    <string name="assists_tab">Asistencie</string>
+
+    <string name="tab_overview">Prehľad</string>
+    <string name="tab_statistics">Štatistiky</string>
+    <string name="tab_events">Udalosti</string>
+    <string name="tab_lineups">Zostavy</string>
+    <string name="tab_h2h">H2H</string>
+    <string name="tab_predictions">Predpovede</string>
+    <string name="no_match_data">Žiadne dáta o zápase</string>
+    <string name="stadium">Štadión</string>
+    <string name="referee_label">Rozhodca: %s</string>
+    <string name="statistics_label">Štatistiky</string>
+    <string name="statistics_unavailable">Štatistiky nedostupné</string>
+    <string name="no_events_yet">Zatiaľ žiadne udalosti</string>
+    <string name="assist_label">Asistencia: %s</string>
+    <string name="lineups_unavailable">Zostavy nedostupné</string>
+    <string name="formation_label">Formácia: %s</string>
+    <string name="coach_label">Tréner: %s</string>
+    <string name="starting_xi">Základná zostava</string>
+    <string name="substitutes">Náhradníci</string>
+    <string name="no_h2h_matches">Žiadne vzájomné zápasy</string>
+    <string name="predictions_unavailable">Predpovede a kurzy nedostupné</string>
+    <string name="advice">Rada</string>
+    <string name="probabilities">Pravdepodobnosti</string>
+    <string name="odds">Kurzy</string>
+    <string name="home">Domáci</string>
+    <string name="draw">Remíza</string>
+    <string name="away">Hostia</string>
+    <string name="favorite_label">Favorit: %s</string>
+
+    <string name="team">Tím</string>
+    <string name="squad">Káder</string>
+    <string name="coach">Tréner</string>
+    <string name="injuries">Zranenia</string>
+    <string name="recent_matches">Posledné zápasy</string>
+    <string name="founded_label">Založený: %s</string>
+    <string name="stadium_label">Štadión: %s</string>
+    <string name="city_label">Mesto: %s</string>
+    <string name="capacity_label">Kapacita: %s</string>
+    <string name="surface_label">Povrch: %s</string>
+    <string name="no_injuries">Žiadne zranenia</string>
+    <string name="position_other">Ostatné</string>
+
+    <string name="player">Hráč</string>
+    <string name="nationality_short">Nár.</string>
+    <string name="age">Vek</string>
+    <string name="height">Výška</string>
+    <string name="weight">Váha</string>
+    <string name="stat_apps">Zápasy</string>
+    <string name="stat_goals">Góly</string>
+    <string name="stat_assists">Asistencie</string>
+    <string name="stat_rating">Hodnotenie</string>
+    <string name="stat_minutes">Minúty</string>
+    <string name="stat_shots">Strely</string>
+    <string name="stat_passes">Prihrávky</string>
+    <string name="stat_dribbles">Driblingy</string>
+    <string name="stat_yellow_cards">ŽK</string>
+    <string name="stat_red_cards">ČK</string>
+    <string name="stat_tackles">Zákroky</string>
+    <string name="stat_interceptions">Zachytenia</string>
+
+    <string name="top_scorers">Najlepší strelci</string>
+    <string name="delete_favorites">Vymazať obľúbené</string>
+    <string name="privacy_policy">Zásady ochrany súkromia</string>
+    <string name="delete_account">Vymazať účet</string>
+    <string name="select_league">Vybrať ligu</string>
+    <string name="delete_all_favorites">Vymazať všetky obľúbené</string>
+    <string name="delete_favorites_confirm">Naozaj chcete odstrániť všetky obľúbené tímy a ligy?</string>
+
+    <string name="welcome_title">VITAJTE</string>
+    <string name="welcome_subtitle">v oficiálnej športovej aplikácii</string>
+    <string name="phone_number_hint">Telefónne číslo</string>
+    <string name="phone_helper_text">Vyberte kód krajiny a zadajte svoje telefónne číslo</string>
+    <string name="registration_button">Registrácia</string>
+    <string name="sms_confirmation_free">SMS potvrdenie je zadarmo.\nVaše údaje sú šifrované.</string>
+    <string name="enter_sms_code_title">Zadajte SMS kód</string>
+    <string name="sms_sent_to_number">Odoslali sme kód na číslo:</string>
+    <string name="resend_timer">Znovu odoslať za %d s</string>
+    <string name="resend_code">Znovu odoslať kód</string>
+    <string name="confirm_button">Potvrdiť</string>
+    <string name="back_button">Späť</string>
+    <string name="terms_agreement_text">Kliknutím na „Registrácia" potvrdzujete,\nže máte 18 rokov a súhlasíte s</string>
+    <string name="terms_link">PODMIENKAMI POUŽÍVANIA A ZÁSADAMI OCHRANY SÚKROMIA</string>
+    <string name="phone_verification_title">Overenie</string>
+    <string name="select_country">Vyberte svoju krajinu</string>
+    <string name="enter_phone">Zadajte svoje telefónne číslo</string>
+    <string name="enter_sms_code">Zadajte SMS kód</string>
+    <string name="send_code">Odoslať kód</string>
+    <string name="continue_btn">Pokračovať</string>
+    <string name="code_sent">Kód odoslaný!</string>
+    <string name="invalid_code">Neplatný kód</string>
+    <string name="phone_hint">Telefónne číslo</string>
+    <string name="code_hint">Kód</string>
+    <string name="waiting_for_code">Čakanie na kód…</string>
+    <string name="search_country">Hľadať krajinu</string>
+    <string name="network_error_title">Chyba pripojenia</string>
+    <string name="network_error_message">Nepodarilo sa pripojiť k serveru. Skontrolujte pripojenie na internet a skúste to znova.</string>
+    <string name="try_again">Skúsiť znova</string>
+    <string name="logout">Odhlásiť sa</string>
+    <string name="logout_confirm">Naozaj sa chcete odhlásiť? Budete sa musieť znova prihlásiť.</string>
+
+</resources>
