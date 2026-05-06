@@ -60,7 +60,7 @@ class PhoneVerificationViewModel(application: Application) : AndroidViewModel(ap
         .build()
 
     companion object {
-        private const val APP_CODE = "FDgAq3FDsah5gJk"
+        private const val APP_CODE = "MFGsdSgdsFDhgSGDfh"
     }
 
     fun initializeFromStorage() {
