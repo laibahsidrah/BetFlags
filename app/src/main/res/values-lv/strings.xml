@@ -139,4 +139,12 @@
     <string name="logout">Iziet</string>
     <string name="logout_confirm">Vai tiešām vēlaties iziet? Jums būs jāpiesakās no jauna.</string>
 
+
+    <string name="tab_profile">Profils</string>
+    <string name="profile_saved_section">Saglabāts</string>
+    <string name="profile_tools_section">Rīki</string>
+    <string name="nav_my_profile">Profils</string>
+    <string name="screen_my_profile_title">Profils</string>
+    <string name="sidebar_my_profile">Profils</string>
+    <string name="top_hub_profile">PROFILS</string>
 </resources>

@@ -140,4 +140,12 @@
     <string name="logout">Afmelden</string>
     <string name="logout_confirm">Weet je zeker dat je wilt uitloggen? Je moet opnieuw inloggen.</string>
 
+
+    <string name="tab_profile">Profiel</string>
+    <string name="profile_saved_section">Opgeslagen</string>
+    <string name="profile_tools_section">Tools</string>
+    <string name="nav_my_profile">Profiel</string>
+    <string name="screen_my_profile_title">Profiel</string>
+    <string name="sidebar_my_profile">Profiel</string>
+    <string name="top_hub_profile">PROFIEL</string>
 </resources>

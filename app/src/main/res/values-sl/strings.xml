@@ -153,4 +153,12 @@
     <string name="logout">Odjava</string>
     <string name="logout_confirm">Ali se res želite odjaviti? Znova se boste morali prijaviti.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Shranjeno</string>
+    <string name="profile_tools_section">Orodja</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

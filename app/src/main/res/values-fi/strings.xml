@@ -139,4 +139,12 @@
     <string name="logout">Kirjaudu ulos</string>
     <string name="logout_confirm">Haluatko varmasti kirjautua ulos? Sinun on kirjauduttava uudelleen sisään.</string>
 
+
+    <string name="tab_profile">Profiili</string>
+    <string name="profile_saved_section">Tallennettu</string>
+    <string name="profile_tools_section">Työkalut</string>
+    <string name="nav_my_profile">Profiili</string>
+    <string name="screen_my_profile_title">Profiili</string>
+    <string name="sidebar_my_profile">Profiili</string>
+    <string name="top_hub_profile">PROFIILI</string>
 </resources>

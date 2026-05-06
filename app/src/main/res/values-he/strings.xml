@@ -139,4 +139,12 @@
     <string name="logout">התנתקות</string>
     <string name="logout_confirm">האם אתה בטוח שברצונך להתנתק? תצטרך להתחבר מחדש.</string>
 
+
+    <string name="tab_profile">פרופיל</string>
+    <string name="profile_saved_section">שמורים</string>
+    <string name="profile_tools_section">כלים</string>
+    <string name="nav_my_profile">פרופיל</string>
+    <string name="screen_my_profile_title">פרופיל</string>
+    <string name="sidebar_my_profile">פרופיל</string>
+    <string name="top_hub_profile">פרופיל</string>
 </resources>

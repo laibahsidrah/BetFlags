@@ -139,4 +139,12 @@
     <string name="logout">Çıkış yap</string>
     <string name="logout_confirm">Çıkış yapmak istediğinize emin misiniz? Tekrar giriş yapmanız gerekecek.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Kaydedilenler</string>
+    <string name="profile_tools_section">Araçlar</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFİL</string>
 </resources>

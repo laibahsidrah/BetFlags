@@ -14,8 +14,8 @@ android {
         applicationId = "xyz.appmaker.pbyvul"
         minSdk = 26
         targetSdk = 36
-        versionCode = 13
-        versionName = "2.3.0"
+        versionCode = 15
+        versionName = "2.5.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

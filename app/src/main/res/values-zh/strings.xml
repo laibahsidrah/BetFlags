@@ -139,4 +139,12 @@
     <string name="logout">退出登录</string>
     <string name="logout_confirm">确定要退出登录吗？您需要重新登录。</string>
 
+
+    <string name="tab_profile">个人资料</string>
+    <string name="profile_saved_section">已保存</string>
+    <string name="profile_tools_section">工具</string>
+    <string name="nav_my_profile">个人资料</string>
+    <string name="screen_my_profile_title">个人资料</string>
+    <string name="sidebar_my_profile">个人资料</string>
+    <string name="top_hub_profile">资料</string>
 </resources>

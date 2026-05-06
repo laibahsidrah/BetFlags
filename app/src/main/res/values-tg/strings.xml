@@ -139,4 +139,12 @@
     <string name="logout">Баромадан</string>
     <string name="logout_confirm">Оё мутмаин ҳастед, ки мехоҳед бароед? Шумо бояд дубора ворид шавед.</string>
 
+
+    <string name="tab_profile">Профил</string>
+    <string name="profile_saved_section">Захирашуда</string>
+    <string name="profile_tools_section">Воситаҳо</string>
+    <string name="nav_my_profile">Профил</string>
+    <string name="screen_my_profile_title">Профил</string>
+    <string name="sidebar_my_profile">Профил</string>
+    <string name="top_hub_profile">ПРОФИЛ</string>
 </resources>

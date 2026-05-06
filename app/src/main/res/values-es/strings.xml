@@ -140,4 +140,12 @@
     <string name="logout">Cerrar sesión</string>
     <string name="logout_confirm">¿Seguro que quieres cerrar sesión? Deberás iniciar sesión de nuevo.</string>
 
+
+    <string name="tab_profile">Perfil</string>
+    <string name="profile_saved_section">Guardado</string>
+    <string name="profile_tools_section">Herramientas</string>
+    <string name="nav_my_profile">Perfil</string>
+    <string name="screen_my_profile_title">Perfil</string>
+    <string name="sidebar_my_profile">Perfil</string>
+    <string name="top_hub_profile">PERFIL</string>
 </resources>

@@ -140,4 +140,12 @@
     <string name="logout">Sair</string>
     <string name="logout_confirm">Tem certeza de que deseja sair? Você precisará entrar novamente.</string>
 
+
+    <string name="tab_profile">Perfil</string>
+    <string name="profile_saved_section">Guardados</string>
+    <string name="profile_tools_section">Ferramentas</string>
+    <string name="nav_my_profile">Perfil</string>
+    <string name="screen_my_profile_title">Perfil</string>
+    <string name="sidebar_my_profile">Perfil</string>
+    <string name="top_hub_profile">PERFIL</string>
 </resources>

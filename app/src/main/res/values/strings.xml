@@ -1,29 +1,31 @@
 <resources>
     <string name="app_name">Sport Diretta</string>
 
-    <!-- Sportbook shell: верхний хаб + боковая колонка (не drawer) -->
     <string name="top_hub_live">LIVE</string>
     <string name="top_hub_matches">MATCHES</string>
     <string name="top_hub_leagues">LEAGUES</string>
     <string name="top_hub_saved">MY LIST</string>
+    <string name="top_hub_profile">PROFILE</string>
     <string name="sidebar_group_football">Football</string>
     <string name="sidebar_football_live">Live matches</string>
     <string name="sidebar_football_calendar">Daily list</string>
     <string name="sidebar_football_leagues">Leagues &amp; cups</string>
     <string name="sidebar_my_list">My list</string>
+    <string name="sidebar_my_profile">Profile</string>
     <string name="sidebar_hide">Hide menu</string>
     <string name="sidebar_show">Show menu</string>
 
-    <!-- Navigation (drawer); старые ключи tab_* оставлены для совместимости строк -->
     <string name="nav_drawer_section">Browse</string>
     <string name="open_menu">Open menu</string>
     <string name="nav_live_center">Live center</string>
     <string name="nav_schedule">Calendar</string>
     <string name="nav_competitions">Competitions</string>
     <string name="nav_my_list">My list</string>
+    <string name="nav_my_profile">Profile</string>
     <string name="screen_schedule_title">Calendar</string>
     <string name="screen_competitions_title">Competitions</string>
     <string name="screen_my_list_title">My list</string>
+    <string name="screen_my_profile_title">Profile</string>
     <string name="tab_live">Live</string>
     <string name="tab_matches">Matches</string>
     <string name="tab_leagues">Leagues</string>
@@ -33,7 +35,6 @@
     <string name="profile_saved_section">Saved</string>
     <string name="profile_tools_section">Tools</string>
 
-    <!-- Common -->
     <string name="loading_error">Loading Error</string>
     <string name="retry">Retry</string>
     <string name="no_data">No data</string>
@@ -44,7 +45,6 @@
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
 
-    <!-- Match Status -->
     <string name="status_tbd">TBD</string>
     <string name="status_not_started">Not Started</string>
     <string name="status_finished">Finished</string>
@@ -55,7 +55,6 @@
     <string name="status_abandoned">Abandoned</string>
     <string name="status_halftime">Half-Time</string>
 
-    <!-- Live Screen -->
     <string name="live_screen_title">LIVE</string>
     <string name="sport_football_prefix">Football.</string>
     <string name="col_event">Event</string>
@@ -70,20 +69,16 @@
     <string name="col_tot">Tot</string>
     <string name="no_live_matches">No live matches at the moment</string>
 
-    <!-- Matches Screen -->
     <string name="today">Today</string>
     <string name="no_matches_date">No matches for this date</string>
 
-    <!-- Leagues Screen -->
     <string name="search_league_hint">Search league or country…</string>
     <string name="no_leagues_found">No leagues found</string>
 
-    <!-- Favorites Screen -->
     <string name="add_favorites_hint">Add teams or leagues to favorites</string>
     <string name="teams">Teams</string>
     <string name="leagues_label">Leagues</string>
 
-    <!-- Standings Screen -->
     <string name="standings">Standings</string>
     <string name="col_rank">#</string>
     <string name="col_team">Team</string>
@@ -94,12 +89,10 @@
     <string name="col_gd">GD</string>
     <string name="col_pts">Pts</string>
 
-    <!-- Top Scorers Screen -->
     <string name="top_players">Top Players</string>
     <string name="scorers">Scorers</string>
     <string name="assists_tab">Assists</string>
 
-    <!-- Match Details Screen -->
     <string name="tab_overview">Overview</string>
     <string name="tab_statistics">Statistics</string>
     <string name="tab_events">Events</string>
@@ -128,7 +121,6 @@
     <string name="away">Away</string>
     <string name="favorite_label">Favorite: %s</string>
 
-    <!-- Team Details Screen -->
     <string name="team">Team</string>
     <string name="squad">Squad</string>
     <string name="coach">Coach</string>
@@ -142,7 +134,6 @@
     <string name="no_injuries">No injuries</string>
     <string name="position_other">Other</string>
 
-    <!-- Player Details Screen -->
     <string name="player">Player</string>
     <string name="nationality_short">Nat.</string>
     <string name="age">Age</string>
@@ -161,7 +152,6 @@
     <string name="stat_tackles">Tackles</string>
     <string name="stat_interceptions">Interceptions</string>
 
-    <!-- More Screen -->
     <string name="top_scorers">Top Scorers</string>
     <string name="delete_favorites">Delete Favorites</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -172,7 +162,6 @@
     <string name="delete_all_favorites">Delete All Favorites</string>
     <string name="delete_favorites_confirm">Are you sure you want to remove all favorite teams and leagues?</string>
 
-    <!-- Phone Verification -->
     <string name="welcome_title">WELCOME</string>
     <string name="welcome_subtitle">to the official sport app</string>
     <string name="phone_number_hint">Phone number</string>

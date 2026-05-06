@@ -139,4 +139,12 @@
     <string name="logout">Đăng xuất</string>
     <string name="logout_confirm">Bạn có chắc chắn muốn đăng xuất? Bạn sẽ phải đăng nhập lại.</string>
 
+
+    <string name="tab_profile">Hồ sơ</string>
+    <string name="profile_saved_section">Đã lưu</string>
+    <string name="profile_tools_section">Công cụ</string>
+    <string name="nav_my_profile">Hồ sơ</string>
+    <string name="screen_my_profile_title">Hồ sơ</string>
+    <string name="sidebar_my_profile">Hồ sơ</string>
+    <string name="top_hub_profile">HỒ SƠ</string>
 </resources>

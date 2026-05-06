@@ -5,23 +5,17 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.CalendarMonth
 import androidx.compose.material.icons.outlined.EmojiEvents
 import androidx.compose.material.icons.outlined.LiveTv
-import androidx.compose.material.icons.outlined.StarOutline
+import androidx.compose.material.icons.outlined.Person
 import androidx.compose.ui.graphics.vector.ImageVector
 import xyz.appmaker.pbyvul.R
 
-/**
- * Корневые разделы приложения: боковое меню (не нижняя панель), порядок и имена маршрутов
- * отличаются от прежней схемы «вкладок», функционал экранов тот же.
- */
 sealed class RootDestination(
     val route: String,
     @StringRes val drawerLabelResId: Int,
-    /** Короткая подпись верхнего «хаба» (CAPS как у букмекера). */
     @StringRes val hubLabelResId: Int,
     @StringRes val screenTitleResId: Int,
     val icon: ImageVector
 ) {
-    /** LIVE — первый пункт (как в линейке live-ставок). */
     data object LiveCenter : RootDestination(
         route = "live_center",
         drawerLabelResId = R.string.nav_live_center,
@@ -46,21 +40,17 @@ sealed class RootDestination(
         icon = Icons.Outlined.EmojiEvents
     )
 
-    data object MyList : RootDestination(
-        route = "my_list",
-        drawerLabelResId = R.string.nav_my_list,
-        hubLabelResId = R.string.top_hub_saved,
-        screenTitleResId = R.string.screen_my_list_title,
-        icon = Icons.Outlined.StarOutline
+    data object MyProfile : RootDestination(
+        route = "my_profile",
+        drawerLabelResId = R.string.nav_my_profile,
+        hubLabelResId = R.string.top_hub_profile,
+        screenTitleResId = R.string.screen_my_profile_title,
+        icon = Icons.Outlined.Person
     )
 
     companion object {
-        /**
-         * Lazy — иначе при <clinit> companion может обратиться к вложенным `data object`
-         * до завершения их инициализации (ExceptionInInitializerError / NPE на .route).
-         */
         val all: List<RootDestination> by lazy {
-            listOf(LiveCenter, Schedule, Competitions, MyList)
+            listOf(LiveCenter, Schedule, Competitions, MyProfile)
         }
 
         val rootRoutes: Set<String> by lazy {

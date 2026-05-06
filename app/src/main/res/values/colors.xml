@@ -9,4 +9,5 @@
     <color name="black">#FF000000</color>
     <color name="light_gray">#FFF0F2F5</color>
     <color name="close_button_bg">#80000000</color>
+    <color name="navy_primary">#FF0B2347</color>
 </resources>

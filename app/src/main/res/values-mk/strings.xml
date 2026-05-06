@@ -153,4 +153,12 @@
     <string name="logout">Одјава</string>
     <string name="logout_confirm">Дали сте сигурни дека сакате да се одјавите? Ќе треба повторно да се најавите.</string>
 
+
+    <string name="tab_profile">Профил</string>
+    <string name="profile_saved_section">Зачувано</string>
+    <string name="profile_tools_section">Алатки</string>
+    <string name="nav_my_profile">Профил</string>
+    <string name="screen_my_profile_title">Профил</string>
+    <string name="sidebar_my_profile">Профил</string>
+    <string name="top_hub_profile">ПРОФИЛ</string>
 </resources>

@@ -153,4 +153,12 @@
     <string name="logout">Odhlásiť sa</string>
     <string name="logout_confirm">Naozaj sa chcete odhlásiť? Budete sa musieť znova prihlásiť.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Uložené</string>
+    <string name="profile_tools_section">Nástroje</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

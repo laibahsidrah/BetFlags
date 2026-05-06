@@ -140,4 +140,12 @@
     <string name="logout">Abmelden</string>
     <string name="logout_confirm">Möchten Sie sich wirklich abmelden? Sie müssen sich erneut anmelden.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Gespeichert</string>
+    <string name="profile_tools_section">Tools</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

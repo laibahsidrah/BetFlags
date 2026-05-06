@@ -139,4 +139,12 @@
     <string name="logout">Log keluar</string>
     <string name="logout_confirm">Adakah anda pasti mahu log keluar? Anda perlu log masuk semula.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Disimpan</string>
+    <string name="profile_tools_section">Alat</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

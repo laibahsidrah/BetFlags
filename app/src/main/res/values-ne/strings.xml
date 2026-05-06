@@ -139,4 +139,12 @@
     <string name="logout">लगआउट</string>
     <string name="logout_confirm">के तपाईं साँच्चै लगआउट गर्न चाहनुहुन्छ? तपाईंले फेरि साइन इन गर्नुपर्छ।</string>
 
+
+    <string name="tab_profile">प्रोफाइल</string>
+    <string name="profile_saved_section">सुरक्षित</string>
+    <string name="profile_tools_section">उपकरणहरू</string>
+    <string name="nav_my_profile">प्रोफाइल</string>
+    <string name="screen_my_profile_title">प्रोफाइल</string>
+    <string name="sidebar_my_profile">प्रोफाइल</string>
+    <string name="top_hub_profile">प्रोफाइल</string>
 </resources>

@@ -153,4 +153,12 @@
     <string name="logout">Deconectare</string>
     <string name="logout_confirm">Sigur vrei să te deconectezi? Va trebui să te conectezi din nou.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Salvate</string>
+    <string name="profile_tools_section">Instrumente</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

@@ -139,4 +139,12 @@
     <string name="logout">ログアウト</string>
     <string name="logout_confirm">本当にログアウトしますか？再度サインインする必要があります。</string>
 
+
+    <string name="tab_profile">プロフィール</string>
+    <string name="profile_saved_section">保存済み</string>
+    <string name="profile_tools_section">ツール</string>
+    <string name="nav_my_profile">プロフィール</string>
+    <string name="screen_my_profile_title">プロフィール</string>
+    <string name="sidebar_my_profile">プロフィール</string>
+    <string name="top_hub_profile">プロフィール</string>
 </resources>

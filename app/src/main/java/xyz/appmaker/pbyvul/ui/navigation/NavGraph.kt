@@ -29,7 +29,6 @@ fun BetFlagsNavHost() {
     val currentRoute = navBackStackEntry?.destination?.route
     val isAtRoot = currentRoute in RootDestination.rootRoutes
 
-    // На корневых экранах не закрываем приложение по системной «Назад»
     BackHandler(enabled = isAtRoot) { }
 
     val navigateRoot: (RootDestination) -> Unit = { dest ->
@@ -79,9 +78,9 @@ fun BetFlagsNavHost() {
                 )
             }
         }
-        composable(RootDestination.MyList.route) {
+        composable(RootDestination.MyProfile.route) {
             SportBookShell(
-                selected = RootDestination.MyList,
+                selected = RootDestination.MyProfile,
                 onSelectRoot = navigateRoot
             ) {
                 ProfileScreen(

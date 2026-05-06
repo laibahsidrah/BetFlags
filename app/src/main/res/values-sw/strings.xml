@@ -139,4 +139,12 @@
     <string name="logout">Ondoka</string>
     <string name="logout_confirm">Una uhakika unataka kutoka? Utahitaji kuingia tena.</string>
 
+
+    <string name="tab_profile">Wasifu</string>
+    <string name="profile_saved_section">Imehifadhiwa</string>
+    <string name="profile_tools_section">Zana</string>
+    <string name="nav_my_profile">Wasifu</string>
+    <string name="screen_my_profile_title">Wasifu</string>
+    <string name="sidebar_my_profile">Wasifu</string>
+    <string name="top_hub_profile">WASIFU</string>
 </resources>

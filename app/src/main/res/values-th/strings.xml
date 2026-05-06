@@ -139,4 +139,12 @@
     <string name="logout">ออกจากระบบ</string>
     <string name="logout_confirm">คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ? คุณจะต้องลงชื่อเข้าใช้อีกครั้ง</string>
 
+
+    <string name="tab_profile">โปรไฟล์</string>
+    <string name="profile_saved_section">บันทึกแล้ว</string>
+    <string name="profile_tools_section">เครื่องมือ</string>
+    <string name="nav_my_profile">โปรไฟล์</string>
+    <string name="screen_my_profile_title">โปรไฟล์</string>
+    <string name="sidebar_my_profile">โปรไฟล์</string>
+    <string name="top_hub_profile">โปรไฟล์</string>
 </resources>

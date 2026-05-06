@@ -139,4 +139,12 @@
     <string name="logout">Logi välja</string>
     <string name="logout_confirm">Kas soovid kindlasti välja logida? Pead uuesti sisse logima.</string>
 
+
+    <string name="tab_profile">Profiil</string>
+    <string name="profile_saved_section">Salvestatud</string>
+    <string name="profile_tools_section">Tööriistad</string>
+    <string name="nav_my_profile">Profiil</string>
+    <string name="screen_my_profile_title">Profiil</string>
+    <string name="sidebar_my_profile">Profiil</string>
+    <string name="top_hub_profile">PROFIIL</string>
 </resources>

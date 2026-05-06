@@ -27,6 +27,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.KeyboardArrowLeft
 import androidx.compose.material.icons.automirrored.outlined.ListAlt
+import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.outlined.CalendarMonth
 import androidx.compose.material.icons.outlined.EmojiEvents
@@ -57,9 +58,6 @@ import xyz.appmaker.pbyvul.ui.theme.SportsbookSidebarBg
 import xyz.appmaker.pbyvul.ui.theme.SportsbookTabActive
 import xyz.appmaker.pbyvul.ui.theme.White
 
-/**
- * Верхний хаб + скрываемое боковое меню только по футболу.
- */
 @Composable
 fun SportBookShell(
     selected: RootDestination,
@@ -231,10 +229,10 @@ private fun SportBookSidebar(
             onClick = { onSelectRoot(RootDestination.Competitions) }
         )
         SidebarNavRow(
-            icon = Icons.AutoMirrored.Outlined.ListAlt,
-            label = stringResource(R.string.sidebar_my_list),
-            selected = selected == RootDestination.MyList,
-            onClick = { onSelectRoot(RootDestination.MyList) }
+            icon = Icons.Outlined.Person,
+            label = stringResource(R.string.sidebar_my_profile),
+            selected = selected == RootDestination.MyProfile,
+            onClick = { onSelectRoot(RootDestination.MyProfile) }
         )
     }
 }

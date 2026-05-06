@@ -140,4 +140,12 @@
     <string name="logout">Déconnexion</string>
     <string name="logout_confirm">Voulez-vous vraiment vous déconnecter ? Vous devrez vous reconnecter.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Enregistrés</string>
+    <string name="profile_tools_section">Outils</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

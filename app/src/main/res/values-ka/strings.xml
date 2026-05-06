@@ -139,4 +139,12 @@
     <string name="logout">გასვლა</string>
     <string name="logout_confirm">დარწმუნებული ხართ, რომ გსურთ გასვლა? მოგიწევთ თავიდან შესვლა.</string>
 
+
+    <string name="tab_profile">პროფილი</string>
+    <string name="profile_saved_section">შენახული</string>
+    <string name="profile_tools_section">ინსტრუმენტები</string>
+    <string name="nav_my_profile">პროფილი</string>
+    <string name="screen_my_profile_title">პროფილი</string>
+    <string name="sidebar_my_profile">პროფილი</string>
+    <string name="top_hub_profile">პროფილი</string>
 </resources>

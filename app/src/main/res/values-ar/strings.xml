@@ -139,4 +139,12 @@
     <string name="logout">تسجيل الخروج</string>
     <string name="logout_confirm">هل أنت متأكد أنك تريد تسجيل الخروج؟ ستحتاج إلى تسجيل الدخول مرة أخرى.</string>
 
+
+    <string name="tab_profile">الملف الشخصي</string>
+    <string name="profile_saved_section">المحفوظات</string>
+    <string name="profile_tools_section">الأدوات</string>
+    <string name="nav_my_profile">الملف الشخصي</string>
+    <string name="screen_my_profile_title">الملف الشخصي</string>
+    <string name="sidebar_my_profile">الملف الشخصي</string>
+    <string name="top_hub_profile">ملفي</string>
 </resources>

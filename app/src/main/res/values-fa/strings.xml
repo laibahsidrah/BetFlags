@@ -139,4 +139,12 @@
     <string name="logout">خروج</string>
     <string name="logout_confirm">آیا مطمئن هستید که می‌خواهید خارج شوید؟ باید دوباره وارد شوید.</string>
 
+
+    <string name="tab_profile">پروفایل</string>
+    <string name="profile_saved_section">ذخیره‌شده</string>
+    <string name="profile_tools_section">ابزارها</string>
+    <string name="nav_my_profile">پروفایل</string>
+    <string name="screen_my_profile_title">پروفایل</string>
+    <string name="sidebar_my_profile">پروفایل</string>
+    <string name="top_hub_profile">پروفایل</string>
 </resources>

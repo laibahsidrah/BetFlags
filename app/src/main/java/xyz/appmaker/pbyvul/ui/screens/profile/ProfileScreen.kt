@@ -20,11 +20,14 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.DeleteForever
+import androidx.compose.material.icons.filled.PersonRemove
+import androidx.compose.material.icons.filled.Policy
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -43,22 +46,29 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import xyz.appmaker.pbyvul.R
+import xyz.appmaker.pbyvul.activity.AccountRemovalActivity
 import xyz.appmaker.pbyvul.data.local.entity.FavoriteLeagueEntity
 import xyz.appmaker.pbyvul.data.local.entity.FavoriteTeamEntity
 import xyz.appmaker.pbyvul.ui.components.SectionHeader
 import xyz.appmaker.pbyvul.ui.components.TeamLogo
 import xyz.appmaker.pbyvul.ui.screens.favorites.FavoritesViewModel
 import xyz.appmaker.pbyvul.ui.screens.more.MoreViewModel
+import xyz.appmaker.pbyvul.ui.screens.phone.PolicyViewerScreen
 import xyz.appmaker.pbyvul.ui.theme.LightGray
 import xyz.appmaker.pbyvul.ui.theme.NavyPrimary
 import xyz.appmaker.pbyvul.ui.theme.PrimaryRed
 import xyz.appmaker.pbyvul.ui.theme.TextPrimary
 import xyz.appmaker.pbyvul.ui.theme.White
+
+private const val PRIVACY_POLICY_DESTINATION = "https://getapisportapp.site/bf-app/privacy/"
 
 private data class TopLeagueOption(
     val leagueId: Int,
@@ -82,10 +92,30 @@ fun ProfileScreen(
     favoritesViewModel: FavoritesViewModel = hiltViewModel(),
     moreViewModel: MoreViewModel = hiltViewModel()
 ) {
+    val context = LocalContext.current
     val teams by favoritesViewModel.favoriteTeams.collectAsStateWithLifecycle()
     val leagues by favoritesViewModel.favoriteLeagues.collectAsStateWithLifecycle()
     var showTopScorersDialog by remember { mutableStateOf(false) }
     var showDeleteConfirmation by remember { mutableStateOf(false) }
+    var showPolicyViewer by remember { mutableStateOf(false) }
+
+    if (showPolicyViewer) {
+        Dialog(
+            onDismissRequest = { showPolicyViewer = false },
+            properties = DialogProperties(
+                usePlatformDefaultWidth = false,
+                decorFitsSystemWindows = false
+            )
+        ) {
+            Surface(modifier = Modifier.fillMaxSize(), color = White) {
+                PolicyViewerScreen(
+                    destination = PRIVACY_POLICY_DESTINATION,
+                    onClose = { showPolicyViewer = false },
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
+        }
+    }
 
     LazyColumn(
         contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 4.dp, bottom = 4.dp),
@@ -154,6 +184,20 @@ fun ProfileScreen(
                     title = stringResource(R.string.delete_favorites),
                     icon = Icons.Default.DeleteForever,
                     onClick = { showDeleteConfirmation = true }
+                )
+            }
+            item {
+                ProfileToolCard(
+                    title = stringResource(R.string.privacy_policy),
+                    icon = Icons.Default.Policy,
+                    onClick = { showPolicyViewer = true }
+                )
+            }
+            item {
+                ProfileToolCard(
+                    title = stringResource(R.string.delete_account),
+                    icon = Icons.Default.PersonRemove,
+                    onClick = { AccountRemovalActivity.start(context) }
                 )
             }
     }

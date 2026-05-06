@@ -140,4 +140,12 @@
     <string name="logout">Log ud</string>
     <string name="logout_confirm">Er du sikker på, at du vil logge ud? Du skal logge ind igen.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Gemt</string>
+    <string name="profile_tools_section">Værktøjer</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>

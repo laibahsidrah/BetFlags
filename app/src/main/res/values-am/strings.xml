@@ -139,4 +139,12 @@
     <string name="logout">ውጣ</string>
     <string name="logout_confirm">እርግጠኛ ነዎት መውጣት ይፈልጋሉ? እንደገና መግባት ይኖርብዎታል።</string>
 
+
+    <string name="tab_profile">መገለጫ</string>
+    <string name="profile_saved_section">የተቀመጠ</string>
+    <string name="profile_tools_section">መሳሪያዎች</string>
+    <string name="nav_my_profile">መገለጫ</string>
+    <string name="screen_my_profile_title">መገለጫ</string>
+    <string name="sidebar_my_profile">መገለጫ</string>
+    <string name="top_hub_profile">መገለጫ</string>
 </resources>

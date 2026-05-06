@@ -153,4 +153,12 @@
     <string name="logout">Kijelentkezés</string>
     <string name="logout_confirm">Biztosan ki akar jelentkezni? Újra be kell jelentkeznie.</string>
 
+
+    <string name="tab_profile">Profil</string>
+    <string name="profile_saved_section">Mentett</string>
+    <string name="profile_tools_section">Eszközök</string>
+    <string name="nav_my_profile">Profil</string>
+    <string name="screen_my_profile_title">Profil</string>
+    <string name="sidebar_my_profile">Profil</string>
+    <string name="top_hub_profile">PROFIL</string>
 </resources>
