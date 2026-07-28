@@ -7,7 +7,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalContext
 
 @Composable
-fun BrowserScreen(
+fun PortalScreen(
     address: String
 ) {
     val context = LocalContext.current
