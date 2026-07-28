@@ -35,6 +35,14 @@ class LaunchViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     private suspend fun runPolicyGateThenRoute() {
+	
+	val redirectLink = storage.getRedirectLink()
+    if (!redirectLink.isNullOrEmpty()) {
+        _startupPhase.value = StartupPhase.PolicyLoaded(true)
+        _launchState.value = LaunchState.Remote(redirectLink)
+        return
+    }
+	
         _startupPhase.value = StartupPhase.CheckingPolicy
         _launchState.value = LaunchState.Loading
 
