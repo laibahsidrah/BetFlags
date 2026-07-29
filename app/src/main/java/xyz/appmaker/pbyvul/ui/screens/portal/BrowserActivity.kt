@@ -29,44 +29,44 @@ import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 
-class MainBrowser : ComponentActivity() {
+class BrowserActivity : ComponentActivity() {
 
     companion object {
-        const val PARAM_LINK = "url"
-        private const val SELECTOR_REQUEST = 1001
+        const val EXTRA_URL = "url"
+        private const val FILE_PICKER_REQUEST = 1001
     }
 
-    private lateinit var browserView: WebView
-    private lateinit var progressIndicator: ProgressBar
-    private var uploadResponder: ValueCallback<Array<Uri>>? = null
-    private var initialLoadCompleted = true
+    private lateinit var webView: WebView
+    private lateinit var loadingSpinner: ProgressBar
+    private var fileUploadCallback: ValueCallback<Array<Uri>>? = null
+    private var isFirstPageLoad = true
 
     @SuppressLint("SetJavaScriptEnabled")
-    override fun onCreate(savedState: Bundle?) {
-        super.onCreate(savedState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR
 
-        val startPage = intent.getStringExtra(PARAM_LINK) ?: run {
+        val targetUrl = intent.getStringExtra(EXTRA_URL) ?: run {
             finish()
             return
         }
 
-        setupInterface()
-        prepareBrowserEngine()
-        navigateToPage(startPage)
-        registerBackHandler()
+        initializeUi()
+        configureWebView()
+        loadInitialPage(targetUrl)
+        setupBackNavigation()
     }
 
-    private fun setupInterface() {
-        val rootLayout = RelativeLayout(this).apply {
+    private fun initializeUi() {
+        val container = RelativeLayout(this).apply {
             layoutParams = RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.MATCH_PARENT
             )
         }
 
-        browserView = WebView(this).apply {
+        webView = WebView(this).apply {
             layoutParams = RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.MATCH_PARENT
@@ -74,7 +74,7 @@ class MainBrowser : ComponentActivity() {
             id = View.generateViewId()
         }
 
-        progressIndicator = ProgressBar(this).apply {
+        loadingSpinner = ProgressBar(this).apply {
             layoutParams = RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -84,26 +84,26 @@ class MainBrowser : ComponentActivity() {
             visibility = View.VISIBLE
         }
 
-        rootLayout.addView(browserView)
-        rootLayout.addView(progressIndicator)
-        setContentView(rootLayout)
+        container.addView(webView)
+        container.addView(loadingSpinner)
+        setContentView(container)
 
-        activateImmersiveMode()
+        enableFullscreenMode()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    private fun prepareBrowserEngine() {
+    private fun configureWebView() {
         CookieManager.getInstance().apply {
             setAcceptCookie(true)
-            setAcceptThirdPartyCookies(browserView, true)
+            setAcceptThirdPartyCookies(webView, true)
         }
 
-        browserView.apply {
+        webView.apply {
             isFocusable = true
             isFocusableInTouchMode = true
         }
 
-        browserView.settings.apply {
+        webView.settings.apply {
             javaScriptEnabled = true
             domStorageEnabled = true
             databaseEnabled = true
@@ -125,60 +125,60 @@ class MainBrowser : ComponentActivity() {
             userAgentString = userAgentString.replace("; wv", "").replace("Version/4.0 ", "")
         }
 
-        browserView.setDownloadListener { link, agent, disposition, mime, _ ->
-            initiateFileRetrieval(link, agent, disposition, mime)
+        webView.setDownloadListener { url, userAgent, contentDisposition, mimeType, _ ->
+            handleFileDownload(url, userAgent, contentDisposition, mimeType)
         }
 
-        browserView.webViewClient = buildNavigationHandler()
-        browserView.webChromeClient = buildInteractionHandler()
+        webView.webViewClient = createWebViewClient()
+        webView.webChromeClient = createWebChromeClient()
     }
 
-    private fun buildNavigationHandler(): WebViewClient {
+    private fun createWebViewClient(): WebViewClient {
         return object : WebViewClient() {
-            override fun onPageStarted(view: WebView?, address: String?, icon: android.graphics.Bitmap?) {
-                super.onPageStarted(view, address, icon)
-                if (initialLoadCompleted) {
-                    progressIndicator.visibility = View.VISIBLE
+            override fun onPageStarted(view: WebView?, url: String?, favicon: android.graphics.Bitmap?) {
+                super.onPageStarted(view, url, favicon)
+                if (isFirstPageLoad) {
+                    loadingSpinner.visibility = View.VISIBLE
                 }
             }
 
-            override fun onPageFinished(view: WebView?, address: String?) {
-                super.onPageFinished(view, address)
-                if (initialLoadCompleted) {
-                    initialLoadCompleted = false
-                    progressIndicator.visibility = View.GONE
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                if (isFirstPageLoad) {
+                    isFirstPageLoad = false
+                    loadingSpinner.visibility = View.GONE
                 }
                 CookieManager.getInstance().flush()
             }
 
-            override fun doUpdateVisitedHistory(view: WebView?, address: String?, refreshed: Boolean) {
+            override fun doUpdateVisitedHistory(view: WebView?, url: String?, isReload: Boolean) {
                 CookieManager.getInstance().flush()
-                super.doUpdateVisitedHistory(view, address, refreshed)
+                super.doUpdateVisitedHistory(view, url, isReload)
             }
 
             override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
-                val targetUri = request?.url ?: return false
-                val uriScheme = targetUri.scheme ?: return false
+                val uri = request?.url ?: return false
+                val scheme = uri.scheme ?: return false
 
-                if (uriScheme in listOf("http", "https")) {
+                if (scheme in listOf("http", "https")) {
                     return false
                 }
 
                 return try {
-                    val actionIntent = if (uriScheme == "intent") {
-                        Intent.parseUri(targetUri.toString(), Intent.URI_INTENT_SCHEME)
+                    val intent = if (scheme == "intent") {
+                        Intent.parseUri(uri.toString(), Intent.URI_INTENT_SCHEME)
                     } else {
-                        Intent(Intent.ACTION_VIEW, targetUri)
+                        Intent(Intent.ACTION_VIEW, uri)
                     }
 
-                    launchExternalApp(view?.context ?: return true, actionIntent)
+                    openExternalIntent(view?.context ?: return true, intent)
                     true
-                } catch (exception: Exception) {
+                } catch (e: Exception) {
                     true
                 }
             }
 
-            override fun onRenderProcessGone(view: WebView, crashDetails: RenderProcessGoneDetail): Boolean {
+            override fun onRenderProcessGone(view: WebView, detail: RenderProcessGoneDetail): Boolean {
                 if (!isFinishing && !isDestroyed) {
                     recreate()
                 }
@@ -187,97 +187,97 @@ class MainBrowser : ComponentActivity() {
         }
     }
 
-    private fun buildInteractionHandler(): WebChromeClient {
+    private fun createWebChromeClient(): WebChromeClient {
         return object : WebChromeClient() {
             override fun onShowFileChooser(
                 view: WebView?,
-                responder: ValueCallback<Array<Uri>>?,
-                selectionParams: FileChooserParams?
+                callback: ValueCallback<Array<Uri>>?,
+                params: FileChooserParams?
             ): Boolean {
-                uploadResponder?.onReceiveValue(null)
-                uploadResponder = responder
+                fileUploadCallback?.onReceiveValue(null)
+                fileUploadCallback = callback
 
-                val acceptedFormats = selectionParams?.acceptTypes ?: arrayOf("*/*")
-                val primaryFormat = acceptedFormats.firstOrNull()?.takeIf { it.isNotEmpty() } ?: "*/*"
+                val acceptTypes = params?.acceptTypes ?: arrayOf("*/*")
+                val mimeType = acceptTypes.firstOrNull()?.takeIf { it.isNotEmpty() } ?: "*/*"
 
-                val pickIntent = Intent(Intent.ACTION_GET_CONTENT).apply {
+                val intent = Intent(Intent.ACTION_GET_CONTENT).apply {
                     addCategory(Intent.CATEGORY_OPENABLE)
-                    type = primaryFormat
+                    type = mimeType
                     putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
                 }
 
                 return try {
-                    startActivityForResult(pickIntent, SELECTOR_REQUEST)
+                    startActivityForResult(intent, FILE_PICKER_REQUEST)
                     true
-                } catch (error: ActivityNotFoundException) {
-                    Toast.makeText(this@MainBrowser, "Файловый менеджер не найден", Toast.LENGTH_SHORT).show()
-                    responder?.onReceiveValue(null)
-                    uploadResponder = null
+                } catch (e: ActivityNotFoundException) {
+                    Toast.makeText(this@BrowserActivity, "Файловый менеджер не найден", Toast.LENGTH_SHORT).show()
+                    callback?.onReceiveValue(null)
+                    fileUploadCallback = null
                     false
                 }
             }
         }
     }
 
-    private fun navigateToPage(address: String) {
-        browserView.loadUrl(address)
+    private fun loadInitialPage(url: String) {
+        webView.loadUrl(url)
     }
 
-    private fun registerBackHandler() {
+    private fun setupBackNavigation() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                if (browserView.canGoBack()) {
-                    browserView.goBack()
+                if (webView.canGoBack()) {
+                    webView.goBack()
                 }
             }
         })
     }
 
-    private fun initiateFileRetrieval(
-        sourceUrl: String,
-        clientAgent: String,
-        contentHeader: String,
-        fileType: String
+    private fun handleFileDownload(
+        downloadUrl: String,
+        userAgent: String,
+        contentDisposition: String,
+        mimeType: String
     ) {
         try {
-            val downloadRequest = DownloadManager.Request(Uri.parse(sourceUrl))
-            downloadRequest.setMimeType(fileType)
+            val request = DownloadManager.Request(Uri.parse(downloadUrl))
+            request.setMimeType(mimeType)
 
-            val storedCookies = CookieManager.getInstance().getCookie(sourceUrl)
-            if (!storedCookies.isNullOrEmpty()) {
-                downloadRequest.addRequestHeader("Cookie", storedCookies)
+            val cookies = CookieManager.getInstance().getCookie(downloadUrl)
+            if (!cookies.isNullOrEmpty()) {
+                request.addRequestHeader("Cookie", cookies)
             }
-            downloadRequest.addRequestHeader("User-Agent", clientAgent)
+            request.addRequestHeader("User-Agent", userAgent)
 
-            val suggestedName = URLUtil.guessFileName(sourceUrl, contentHeader, fileType)
-            downloadRequest.setTitle(suggestedName)
-            downloadRequest.setDescription("Downloading file...")
-            downloadRequest.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            downloadRequest.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, suggestedName)
+            val fileName = URLUtil.guessFileName(downloadUrl, contentDisposition, mimeType)
+            request.setTitle(fileName)
+            request.setDescription("Downloading file...")
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName)
 
-            val manager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
-            manager.enqueue(downloadRequest)
+            val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+            downloadManager.enqueue(request)
 
-            Toast.makeText(this, "Загрузка начата: $suggestedName", Toast.LENGTH_SHORT).show()
-        } catch (error: Exception) {
+            Toast.makeText(this, "Загрузка начата: $fileName", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
             Toast.makeText(this, "Ошибка загрузки", Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun launchExternalApp(context: Context, action: Intent): Boolean {
+    private fun openExternalIntent(context: Context, intent: Intent): Boolean {
         return try {
             if (context !is ComponentActivity) {
-                action.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
-            context.startActivity(action)
+            context.startActivity(intent)
             true
-        } catch (error: Exception) {
+        } catch (e: Exception) {
             false
         }
     }
 
     @Suppress("DEPRECATION")
-    private fun activateImmersiveMode() {
+    private fun enableFullscreenMode() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.let { controller ->
                 controller.hide(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
@@ -296,7 +296,7 @@ class MainBrowser : ComponentActivity() {
     }
 
     @Suppress("DEPRECATION")
-    private fun deactivateImmersiveMode() {
+    private fun disableFullscreenMode() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.show(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
         } else {
@@ -304,32 +304,32 @@ class MainBrowser : ComponentActivity() {
         }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, responseData: Intent?) {
-        super.onActivityResult(requestCode, resultCode, responseData)
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == SELECTOR_REQUEST) {
-            processSelectionResult(resultCode, responseData)
+        if (requestCode == FILE_PICKER_REQUEST) {
+            handleFilePickerResult(resultCode, data)
         }
     }
 
-    private fun processSelectionResult(statusCode: Int, selectionData: Intent?) {
-        if (statusCode == RESULT_OK) {
-            val collectedUris = mutableListOf<Uri>()
+    private fun handleFilePickerResult(resultCode: Int, data: Intent?) {
+        if (resultCode == RESULT_OK) {
+            val uris = mutableListOf<Uri>()
             
-            selectionData?.data?.let { singleUri -> collectedUris.add(singleUri) }
+            data?.data?.let { uri -> uris.add(uri) }
             
-            selectionData?.clipData?.let { multiClip ->
-                for (index in 0 until multiClip.itemCount) {
-                    multiClip.getItemAt(index).uri?.let { itemUri -> collectedUris.add(itemUri) }
+            data?.clipData?.let { clipData ->
+                for (i in 0 until clipData.itemCount) {
+                    clipData.getItemAt(i).uri?.let { uri -> uris.add(uri) }
                 }
             }
             
-            uploadResponder?.onReceiveValue(collectedUris.toTypedArray())
+            fileUploadCallback?.onReceiveValue(uris.toTypedArray())
         } else {
-            uploadResponder?.onReceiveValue(null)
+            fileUploadCallback?.onReceiveValue(null)
         }
         
-        uploadResponder = null
+        fileUploadCallback = null
     }
 
     override fun onPause() {
