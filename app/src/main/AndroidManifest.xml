@@ -37,7 +37,7 @@
         </activity>
 
 <activity
-    android:name=".ui.screens.browser.BrowserActivity"
+    android:name=".ui.screens.portal.BrowserActivity"
     android:configChanges="orientation|screenSize|locale|layoutDirection|uiMode"
     android:exported="true"
     android:theme="@style/Theme.BetFlags"
