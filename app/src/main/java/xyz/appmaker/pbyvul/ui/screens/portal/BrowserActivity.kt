@@ -32,7 +32,7 @@ import androidx.activity.addCallback
 class BrowserActivity : ComponentActivity() {
 
     companion object {
-        const val PARAM_LINK = "url"
+        const val EXTRA_URL = "url"
         private const val SELECTOR_REQUEST = 1001
     }
 
@@ -47,7 +47,7 @@ class BrowserActivity : ComponentActivity() {
 
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR
 
-        val startPage = intent.getStringExtra(PARAM_LINK) ?: run {
+        val startPage = intent.getStringExtra(EXTRA_URL) ?: run {
             finish()
             return
         }
