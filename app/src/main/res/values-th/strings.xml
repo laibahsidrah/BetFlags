@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sport Diretta</string>
+    <string name="app_name">ML SPORT</string>
     <string name="tab_live">สด</string>
     <string name="tab_matches">แมตช์</string>
     <string name="tab_leagues">ลีก</string>

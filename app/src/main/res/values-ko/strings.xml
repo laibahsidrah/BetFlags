@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sport Diretta</string>
+    <string name="app_name">ML SPORT</string>
     <string name="tab_live">라이브</string>
     <string name="tab_matches">경기</string>
     <string name="tab_leagues">리그</string>
